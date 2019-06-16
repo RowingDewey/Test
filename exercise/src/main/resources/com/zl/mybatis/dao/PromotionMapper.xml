@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 接口 -->
+<mapper namespace="com.zl.mybatis.dao.PromotionMapper">
+	
+	
+	<select id="getListRecord" resultType="com.zl.mybatis.entity.SaleUserRecord" >
+		SELECT *
+		FROM pyramid_sale_user_activity_rd
+	</select>
+	
+	<resultMap type="com.zl.mybatis.delop.ActivityRD" id="mp1">
+	<id property="MSISDN" column="MSISDN"/>
+		<result property="PROMOTION_ID" column="PROMOTION_ID"/>
+		<result property="ORDERID" column="ORDERID"/>
+		<result property="NICKNAME" column="NICKNAME"/>
+		<result property="ACCOUNTNAME" column="ACCOUNTNAME"/>
+		<result property="FATHER_MSISDN" column="FATHER_MSISDN"/>
+		<result property="FATHER_ACCOUNTNAME" column="FATHER_ACCOUNTNAME"/>
+		<result property="FATHER_NICKNAME" column="FATHER_NICKNAME"/>
+		<result property="SINGLE_WITHDRAW_LIMIT_UPPER" column="SINGLE_WITHDRAW_LIMIT_UPPER"/>
+		<result property="WITHDRAW _STATUS" column="WITHDRAW _STATUS"/>
+		<result property="MODIFY_DATE" column="MODIFY_DATE"/>
+		<result property="WITHDRAWAL_AMOUNT" column="WITHDRAWAL_AMOUNT"/>
+		<result property="TOTAL_REBATE" column="TOTAL_REBATE"/>
+		<result property="WITHDRAWAL_AMOUNT" column="WITHDRAWAL_AMOUNT"/>
+		<result property="DAYTOTAL_REBATE" column="DAYTOTAL_REBATE"/>
+		<result property="TOTAL_ORDER_NUM" column="TOTAL_ORDER_NUM"/>
+		<association property="saleUserRecord" javaType="com.zl.mybatis.entity.SaleUserRecord">
+				<result property="CDK_KEY" column="CDK_KEY"/>
+				<result property="PAY_STATUS" column="PAY_STATUS"/>
+		</association>
+	</resultMap>
+	
+	<select id="getActivityRD" resultMap="mp1" parameterType="java.lang.String" >
+		select * from PYRAMID_SALE_USER_ACTIVITY_RD 
+		p inner join 
+		 PYRAMID_SALE_USER_ORDER_RECORD py 
+		 on p.msisdn = py.msisdn
+		  where p.msisdn = #{aa} and p.orderid =#{bb}
+	</select>
+	
+</mapper>
+
+
+
+
+
+<!--namespace ：命名空间，用于隔离sql语句，后面会讲另一层非常重要的作用。  
+
+parameterType：定义输入到sql中的映射类型
+，#{id}表示使用preparedstatement设置占位符号并将输入变量id传到sql。
+resultType：定义结果映射类型
+
+-->

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 接口 -->
+<mapper namespace="com.zl.mybatis.dao.UserAnswerRecordMapper">
+		
+	<resultMap id="getUserAnswerRecordListMap" type="com.zl.mybatis.pojo.UserAnswerRecord">
+		<result column="IDENTITY_ID" property="identityId" jdbcType="VARCHAR" />
+		<result column="USER_ACCOUNT" property="userAccount" jdbcType="VARCHAR" />
+		<result column="NICK_NAME" property="nickName" jdbcType="VARCHAR" />
+		<result column="EVENT_ID" property="eventid" jdbcType="VARCHAR" />
+		<result column="SUBJECT_NUM" property="subjectNum" jdbcType="INTEGER" />
+		<result column="ANSWER_TRUE" property="answerTrue" jdbcType="INTEGER" />
+		<result column="ANSWER_FALSE" property="answerFalse" jdbcType="INTEGER" />
+		<result column="TICKET_SUM" property="ticketSum" jdbcType="INTEGER" />
+		<result column="IS_SEND" property="isSend" jdbcType="VARCHAR" />
+		<result column="ANSWER_DATE" property="answerDate" jdbcType="DATE" />
+	</resultMap>
+
+	 <select id="getUserAnswerRecordList" parameterType="com.zl.mybatis.entity.UserAnswerQueryVo" resultMap="getUserAnswerRecordListMap">
+	 			select 
+	 			IDENTITY_ID,
+	 			USER_ACCOUNT,
+	 			NICK_NAME,
+	 			EVENT_ID,
+	 			SUBJECT_NUM,
+	 			ANSWER_TRUE,
+	 			ANSWER_FALSE,
+	 			TICKET_SUM,
+	 			IS_SEND,
+	 			ANSWER_DATE
+	 			 from user_answer_record 
+ 		<where>
+   			<if test="identityId != null and identityId != ''">
+				IDENTITY_ID = #{identityId,jdbcType=VARCHAR}
+		    </if> 
+		   	<if test="answerStartDate != null ">  
+		   		<if test="answerEndDate != null ">  
+				   <![CDATA[
+						and ANSWER_DATE < #{answerEndDate,jdbcType=DATE} and ANSWER_DATE >= #{answerStartDate,jdbcType=DATE} 
+				  ]]> 
+				</if>
+		   </if> 
+		 
+		   
+		 </where>
+		   order by ANSWER_DATE desc
+		    
+    </select>
+    
+    
+     <select id="getUserAnswerRecordList1" parameterType="com.zl.mybatis.entity.UserAnswerQueryVo" resultMap="getUserAnswerRecordListMap">
+	 			select 
+	 			IDENTITY_ID,
+	 			USER_ACCOUNT,
+	 			NICK_NAME,
+	 			EVENT_ID,
+	 			SUBJECT_NUM,
+	 			ANSWER_TRUE,
+	 			ANSWER_FALSE,
+	 			TICKET_SUM,
+	 			IS_SEND,
+	 			ANSWER_DATE
+	 			 from user_answer_record 
+ 		<where>
+   			
+		   	<if test="answerStartDate != null ">  
+		   		
+				   <![CDATA[
+						ANSWER_DATE = #{answerEndDate,jdbcType=DATE} 
+				  ]]> 
+		
+		   </if> 
+		 
+		   
+		 </where>
+		    
+    </select>
+    
+     <delete id="delAnswerEventConfnById" parameterType="java.lang.String" >
+    	delete from answer_event_configuration where Eventid= #{eventid} 
+    </delete>
+    
+	<delete id="delAnswerEvertRuleById" parameterType="java.lang.String" >
+    	delete from anser_event_rule where Eventid = #{eventid} 
+    </delete>
+    
+   
+   
+    
+    
+     <select id="selectAnswerEvertRuleById" parameterType="java.lang.String" resultType="java.lang.Integer">
+		select ruleid from anser_event_rule where Eventid = #{eventid} 
+    </select>
+    
+    <insert id="insertRdoEnitiy" parameterType="com.zl.mybatis.entity.RdoOrderInfo">
+    	insert into US_CONSUME_RDO_ORDER_INFO
+			(OperType,
+			CooperateCode,
+			ProductCode,
+			Status,
+			ProductName,
+			FeeType,
+			Fee)
+			values
+			(#{OperType},
+			#{CooperateCode},
+			#{ProductCode},
+			#{Status},
+			#{ProductName},
+			#{FeeType},
+			#{Fee})
+    </insert>
+    
+</mapper>
+
+
+
+
+
+<!--namespace ：命名空间，用于隔离sql语句，后面会讲另一层非常重要的作用。  
+
+parameterType：定义输入到sql中的映射类型
+，#{id}表示使用preparedstatement设置占位符号并将输入变量id传到sql。
+resultType：定义结果映射类型
+
+-->

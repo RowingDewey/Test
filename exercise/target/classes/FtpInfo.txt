@@ -1,0 +1,4 @@
+ctu_ftpUrl=10.211.95.160
+ctu_userName=ctu
+ctu_password=ctu!Q2w
+ctu_port=21

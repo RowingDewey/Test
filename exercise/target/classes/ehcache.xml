@@ -1,0 +1,25 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="../config/ehcache.xsd">
+ 
+ 
+    <diskStore path="e:\"/>
+
+    
+    <defaultCache 
+		maxElementsInMemory="1000" 
+		maxElementsOnDisk="10000000"
+		eternal="false" 
+		overflowToDisk="false" 
+		timeToIdleSeconds="120"
+		timeToLiveSeconds="120" 
+		diskExpiryThreadIntervalSeconds="120"
+		memoryStoreEvictionPolicy="LRU">
+	</defaultCache>
+</ehcache>
+
+<!-- 
+		第七步： 在被 spring 管理 bean 对象方法上 使用@Cacheable 、@CacheEvict
+@Cacheable 应用缓存区，对方法返回结果进行缓存  用于查询方法
+@CacheEvict 清除缓存区数据  用于 增加、修改、删除 方法
+
+ -->

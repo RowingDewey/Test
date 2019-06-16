@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.zl.mybatis.dao.UserMapper">
+<!-- 要在你的Mapper映射文件中添加一行：  <cache /> ，表示此mapper开启二级缓存。 -->
+
+<!-- 修改mapper.xml文件，在cache中指定EhcacheCache。使用Eache -->
+	<!-- <cache/> -->
+	<cache type="org.mybatis.caches.ehcache.EhcacheCache"/>
+	<!-- 根据id获取用户信息 -->
+	<select id="getUserById" parameterType="int"
+		resultType="User" useCache="true">
+		select * from user where id = #{id}
+	</select>
+	
+	<!-- 根据用户名称模糊查询  '%${value}%'-->
+	<select id="findByUserName" parameterType="java.lang.String"
+		resultType="User">
+		select * from user where username like #{hehe}
+	</select>
+	<!-- //添加用户 -->
+	<insert id="insertUser" parameterType="User">
+		<selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer" >
+			select LAST_INSERT_ID()
+		</selectKey>
+		insert into user(username, birthday, sex,address) 
+		values(#{username},#{birthday},#{sex},#{address})
+	</insert>
+	
+	<select id="login" parameterType="java.util.Map"
+		resultType="user">
+		select * from user where username= #{a} and address= #{b}
+	</select>
+	
+	<!-- gnl表达式解析对象字段的值 -->
+	  <select id="findUserByUser" parameterType="User" resultType="User">
+		select * from user where username like #{username} and id=#{id}
+	</select>  
+	
+	<select id="findUserList" parameterType="queryVo" resultType="user">
+		select * from user where username = #{user.username} and sex=#{user.sex}
+	</select>
+	
+	<update id="updateUser" parameterType="user" >
+		update user set username = #{username} where id= #{id}
+	</update>
+	
+	
+	
+</mapper>
+
+
+
+
+
+<!--namespace ：命名空间，用于隔离sql语句，后面会讲另一层非常重要的作用。  
+
+parameterType：定义输入到sql中的映射类型
+，#{id}表示使用preparedstatement设置占位符号并将输入变量id传到sql。
+resultType：定义结果映射类型
+
+-->

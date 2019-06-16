@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+  <!-- 属性 -->
+  <properties resource="db/db.properties"/>
+  
+  
+  <!-- 全局配置参数 -->
+  <settings>
+  	<setting name="cacheEnabled" value="true"/>
+  	  <setting name="logImpl" value="LOG4J"/>
+  	  <!-- 打开延迟加载开关 -->
+  	  <setting name="lazyLoadingEnabled" value="true"/>
+  	  <setting name="aggressiveLazyLoading" value="false"/>
+  	    <!-- 开启二级缓存 -->
+  	  
+  </settings>
+  
+  <!-- 类型别名 -->
+  <typeAliases>
+  	<!-- 单个别名定义 -->
+	<typeAlias type="com.zl.mybatis.pojo.Orders"/>
+	<!-- 批量别名定义，扫描整个包下的类，别名为类名(首字母大写或小写都可以) -->
+  	<package name="com.zl.mybatis.pojo"/>
+  	<package name="其他包"/>
+  </typeAliases>
+  
+  
+
+  <environments default="development">
+ 	 <!-- 环境集合属性对象 -->
+  	 <environment id="development">
+     	<transactionManager type="JDBC"/>
+	    <dataSource type="POOLED">
+	        <property name="driver" value="${jdbc.driver}"/>
+	        <property name="url" value="${jdbc.url}"/>
+	        <property name="username" value="${jdbc.username}"/>
+	        <property name="password" value="${jdbc.password}"/>
+	    </dataSource>  
+    </environment>
+  </environments>
+  
+  <!-- 映射器  -->
+  <mappers>
+  <!-- 此种方法要求mapper接口名称和mapper映射文件名称相同，且放在同一个目录中。  -->
+	<package name="com.zl.mybatis.dao"/>  <!-- 和class的区别 -->
+  </mappers>
+  
+</configuration>
+
+
+
+
+
+
+

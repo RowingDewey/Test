@@ -1,0 +1,1341 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="8" failures="0" name="com.poi.OrderDaoTest" time="2.864" errors="8" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="E:\develop\Java\jdk1.8.0_144\jre\bin"/>
+    <property name="java.vm.version" value="25.144-b01"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="$M2_HOME"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="E:\develop\workSpaceSelf\exercise"/>
+    <property name="java.runtime.version" value="1.8.0_144-b01"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="E:\develop\Java\jdk1.8.0_144\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Administrator\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="E:\company\zl\workspaces\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf6036741683913704628.tmp"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="E:\develop\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:/develop/Java/jdk1.8.0_144/bin/../jre/bin/server;E:/develop/Java/jdk1.8.0_144/bin/../jre/bin;E:/develop/Java/jdk1.8.0_144/bin/../jre/lib/amd64;E:\develop\Java\jdk1.8.0_144\bin;E:\develop\LocalOrcal\app\oracle\product\11.2.0\server\bin;;E:\apache-maven-3.3.9\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;E:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;E:\develop\svn\bin;E:\develop\git\Git\cmd;E:\develop\git\TortoiseGit\bin;E:\develop\version_soft\svn\bin;E:\company\maven_lib\DOCS\tools;E:\develop\sts\sts-bundle\sts-3.6.3.SR1;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\Administrator"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="user.name" value="Administrator"/>
+    <property name="java.class.path" value="E:\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="E:\develop\Java\jdk1.8.0_144\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -s E:\company\maven_lib\settings.xml install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_144"/>
+    <property name="java.ext.dirs" value="E:\develop\Java\jdk1.8.0_144\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="E:\develop\Java\jdk1.8.0_144\jre\lib\resources.jar;E:\develop\Java\jdk1.8.0_144\jre\lib\rt.jar;E:\develop\Java\jdk1.8.0_144\jre\lib\sunrsasign.jar;E:\develop\Java\jdk1.8.0_144\jre\lib\jsse.jar;E:\develop\Java\jdk1.8.0_144\jre\lib\jce.jar;E:\develop\Java\jdk1.8.0_144\jre\lib\charsets.jar;E:\develop\Java\jdk1.8.0_144\jre\lib\jfr.jar;E:\develop\Java\jdk1.8.0_144\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="E:\apache-maven-3.3.9"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.poi.OrderDaoTest" name="test" time="1.891">
+    <error type="java.lang.ExceptionInInitializerError">java.lang.ExceptionInInitializerError
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:186)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.cacheElement(XMLMapperBuilder.java:202)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:114)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:173)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:124)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.binding.MapperRegistry.addMappers(MapperRegistry.java:97)
+	at org.apache.ibatis.binding.MapperRegistry.addMappers(MapperRegistry.java:105)
+	at org.apache.ibatis.session.Configuration.addMappers(Configuration.java:724)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:360)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:98)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:78)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
+	at com.zl.utils.MyBatisUtils.getnewInstance(MyBatisUtils.java:28)
+	at com.poi.OrderDaoTest.before(OrderDaoTest.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: net.sf.ehcache.CacheException: Error configuring from file:/E:/develop/workSpaceSelf/exercise/target/classes/ehcache.xml. Initial cause was Error configuring from input stream. Initial cause was 1 字节的 UTF-8 序列的字节 1 无效。
+	at net.sf.ehcache.config.ConfigurationFactory.parseConfiguration(ConfigurationFactory.java:103)
+	at net.sf.ehcache.config.ConfigurationFactory.parseConfiguration(ConfigurationFactory.java:138)
+	at net.sf.ehcache.CacheManager.parseConfiguration(CacheManager.java:506)
+	at net.sf.ehcache.CacheManager.init(CacheManager.java:289)
+	at net.sf.ehcache.CacheManager.&lt;init&gt;(CacheManager.java:279)
+	at net.sf.ehcache.CacheManager.create(CacheManager.java:641)
+	at org.mybatis.caches.ehcache.EhcacheCache.createCacheManager(EhcacheCache.java:57)
+	at org.mybatis.caches.ehcache.EhcacheCache.&lt;clinit&gt;(EhcacheCache.java:40)
+	... 51 more
+Caused by: net.sf.ehcache.CacheException: Error configuring from input stream. Initial cause was 1 字节的 UTF-8 序列的字节 1 无效。
+	at net.sf.ehcache.config.ConfigurationFactory.parseConfiguration(ConfigurationFactory.java:157)
+	at net.sf.ehcache.config.ConfigurationFactory.parseConfiguration(ConfigurationFactory.java:101)
+	... 58 more
+Caused by: com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException: 1 字节的 UTF-8 序列的字节 1 无效。
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.invalidByte(UTF8Reader.java:701)
+	at com.sun.org.apache.xerces.internal.impl.io.UTF8Reader.read(UTF8Reader.java:567)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.load(XMLEntityScanner.java:1895)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.scanData(XMLEntityScanner.java:1375)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanComment(XMLScanner.java:801)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanComment(XMLDocumentFragmentScannerImpl.java:1034)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$TrailingMiscDriver.next(XMLDocumentScannerImpl.java:1421)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at javax.xml.parsers.SAXParser.parse(SAXParser.java:195)
+	at net.sf.ehcache.config.ConfigurationFactory.parseConfiguration(ConfigurationFactory.java:155)
+	... 59 more
+</error>
+    <system-out>11:39:17,248 DEBUG LogFactory:135 - Logging initialized using &apos;class org.apache.ibatis.logging.slf4j.Slf4jImpl&apos; adapter.
+11:39:17,661 DEBUG VFS:109 - Class not found: org.jboss.vfs.VFS
+11:39:17,661 DEBUG JBoss6VFS:142 - JBoss 6 VFS API is not available in this environment.
+11:39:17,662 DEBUG VFS:109 - Class not found: org.jboss.vfs.VirtualFile
+11:39:17,663 DEBUG VFS:70 - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+11:39:17,665 DEBUG VFS:84 - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+11:39:17,666 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo
+11:39:17,666 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo
+11:39:17,770 DEBUG DefaultVFS:102 - Reader entry: Items.class
+11:39:17,770 DEBUG DefaultVFS:102 - Reader entry: Orderdetail.class
+11:39:17,771 DEBUG DefaultVFS:102 - Reader entry: Orders.class
+11:39:17,772 DEBUG DefaultVFS:102 - Reader entry: OrdersCustom.class
+11:39:17,772 DEBUG DefaultVFS:102 - Reader entry: QueryVo.class
+11:39:17,773 DEBUG DefaultVFS:102 - Reader entry: User.class
+11:39:17,773 DEBUG DefaultVFS:102 - Reader entry: UserAnswerRecord.class
+11:39:17,774 DEBUG DefaultVFS:102 - Reader entry: UserCustom.class
+11:39:17,779 DEBUG DefaultVFS:113 - Listing file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo
+11:39:17,779 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Items.class
+11:39:17,780 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Items.class
+11:39:17,796 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;k&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#25;com/zl/mybatis/pojo/Items&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#7;&amp;#0;&amp;#6;&amp;#1;&amp;#0;&amp;#20;java/io/Serializable&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#19;Ljava/lang/Integer;&amp;#1;&amp;#0;&amp;#4;name&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;&amp;#5;price&amp;#1;&amp;#0;&amp;#17;Ljava/lang/Float;&amp;#1;&amp;#0;&amp;#3;pic&amp;#1;&amp;#0;
+11:39:17,798 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Orderdetail.class
+11:39:17,799 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Orderdetail.class
+11:39:17,810 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;K&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#31;com/zl/mybatis/pojo/Orderdetail&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#7;&amp;#0;&amp;#6;&amp;#1;&amp;#0;&amp;#20;java/io/Serializable&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#19;Ljava/lang/Integer;&amp;#1;&amp;#0;&amp;#8;ordersId&amp;#1;&amp;#0;&amp;#7;itemsId&amp;#1;&amp;#0;&amp;#8;itemsNum&amp;#1;&amp;#0;&amp;#5;items&amp;#1;&amp;#0;&amp;#27;Lcom/zl/mybatis/pojo/Items;&amp;#1;&amp;#0;&amp;#6;&lt;init&gt;&amp;#1;&amp;#0;&amp;#3;()V&amp;#1;&amp;#0;&amp;#4;Code
+11:39:17,811 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Orders.class
+11:39:17,812 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Orders.class
+11:39:17,813 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;m&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#26;com/zl/mybatis/pojo/Orders&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#7;&amp;#0;&amp;#6;&amp;#1;&amp;#0;&amp;#20;java/io/Serializable&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#19;Ljava/lang/Integer;&amp;#1;&amp;#0;&amp;#6;userId&amp;#1;&amp;#0;&amp;#6;number&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;
+11:39:17,813 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/OrdersCustom.class
+11:39:17,814 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/OrdersCustom.class
+11:39:17,815 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#29;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0; com/zl/mybatis/pojo/OrdersCustom&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#26;com/zl/mybatis/pojo/Orders&amp;#1;&amp;#0;&amp;#8;username&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;&amp;#7;address&amp;#1;&amp;#0;&amp;#6;&lt;init&gt;&amp;#1;&amp;#0;&amp;#3;()V&amp;#1;&amp;#0;&amp;#4;Code
+11:39:17,817 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/QueryVo.class
+11:39:17,817 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/QueryVo.class
+11:39:17,818 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0; &amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#27;com/zl/mybatis/pojo/QueryVo&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#4;user&amp;#1;&amp;#0;&amp;#26;Lcom/zl/mybatis/pojo/User;&amp;#1;&amp;#0;
+11:39:17,818 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/User.class
+11:39:17,819 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/User.class
+11:39:17,821 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;U&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#24;com/zl/mybatis/pojo/User&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#7;&amp;#0;&amp;#6;&amp;#1;&amp;#0;&amp;#20;java/io/Serializable&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#1;I&amp;#1;&amp;#0;&amp;#8;username&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;&amp;#3;sex&amp;#1;&amp;#0;&amp;#8;birthday&amp;#1;&amp;#0;&amp;#16;Ljava/util/Date;&amp;#1;&amp;#0;&amp;#7;address&amp;#1;&amp;#0;&amp;#6;orders&amp;#1;&amp;#0;&amp;#16;Ljava/util/List;&amp;#1;&amp;#0;	Signature&amp;#1;&amp;#0;.Ljava/util/List&lt;Lcom/zl/mybatis/pojo/Orders;&gt;;&amp;#1;&amp;#0;&amp;#6;&lt;init&gt;&amp;#1;&amp;#0;&amp;#3;()V&amp;#1;&amp;#0;&amp;#4;Code
+11:39:17,822 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/UserAnswerRecord.class
+11:39:17,823 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/UserAnswerRecord.class
+11:39:17,824 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;?&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;$com/zl/mybatis/pojo/UserAnswerRecord&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;&amp;#7;eventid&amp;#1;&amp;#0;
+11:39:17,825 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/UserCustom.class
+11:39:17,825 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/UserCustom.class
+11:39:17,826 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#19;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#30;com/zl/mybatis/pojo/UserCustom&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#24;com/zl/mybatis/pojo/User&amp;#1;&amp;#0;&amp;#14;birthday_start&amp;#1;&amp;#0;&amp;#16;Ljava/util/Date;&amp;#1;&amp;#0;&amp;#12;birthday_end&amp;#1;&amp;#0;&amp;#6;&lt;init&gt;&amp;#1;&amp;#0;&amp;#3;()V&amp;#1;&amp;#0;&amp;#4;Code
+11:39:17,827 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.Items matches criteria [is assignable to Object]
+11:39:17,828 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.Orderdetail matches criteria [is assignable to Object]
+11:39:17,829 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.Orders matches criteria [is assignable to Object]
+11:39:17,829 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.OrdersCustom matches criteria [is assignable to Object]
+11:39:17,830 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.QueryVo matches criteria [is assignable to Object]
+11:39:17,831 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.User matches criteria [is assignable to Object]
+11:39:17,832 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.UserAnswerRecord matches criteria [is assignable to Object]
+11:39:17,834 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.UserCustom matches criteria [is assignable to Object]
+11:39:17,841 DEBUG LogFactory:135 - Logging initialized using &apos;class org.apache.ibatis.logging.log4j.Log4jImpl&apos; adapter.
+11:39:18,018 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:18,019 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:18,019 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:18,019 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:18,055 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao
+11:39:18,056 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao
+11:39:18,057 DEBUG DefaultVFS:102 - Reader entry: OrderMapper.class
+11:39:18,058 DEBUG DefaultVFS:102 - Reader entry: OrderMapper.xml
+11:39:18,058 DEBUG DefaultVFS:102 - Reader entry: OrderResultTypeMapper.class
+11:39:18,059 DEBUG DefaultVFS:102 - Reader entry: OrderResultTypeMapper.xml
+11:39:18,059 DEBUG DefaultVFS:102 - Reader entry: PromotionMapper.class
+11:39:18,060 DEBUG DefaultVFS:102 - Reader entry: PromotionMapper.xml
+11:39:18,060 DEBUG DefaultVFS:102 - Reader entry: UserAnswerRecordMapper.class
+11:39:18,060 DEBUG DefaultVFS:102 - Reader entry: UserAnswerRecordMapper.xml
+11:39:18,061 DEBUG DefaultVFS:102 - Reader entry: UserMapper.class
+11:39:18,061 DEBUG DefaultVFS:102 - Reader entry: UserMapper.xml
+11:39:18,062 DEBUG DefaultVFS:113 - Listing file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao
+11:39:18,062 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderMapper.class
+11:39:18,062 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderMapper.class
+11:39:18,062 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#17;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#30;com/zl/mybatis/dao/OrderMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#22;findOrderListResultMap&amp;#1;&amp;#0;&amp;#18;()Ljava/util/List;&amp;#1;&amp;#0;
+11:39:18,063 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderMapper.xml
+11:39:18,063 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderMapper.xml
+11:39:18,098 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:18,098 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderResultTypeMapper.class
+11:39:18,099 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderResultTypeMapper.class
+11:39:18,099 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#14;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;(com/zl/mybatis/dao/OrderResultTypeMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#23;findOrderListResultType&amp;#1;&amp;#0;&amp;#18;()Ljava/util/List;&amp;#1;&amp;#0;
+11:39:18,100 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderResultTypeMapper.xml
+11:39:18,100 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderResultTypeMapper.xml
+11:39:18,131 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:18,132 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/PromotionMapper.class
+11:39:18,133 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/PromotionMapper.class
+11:39:18,134 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#19;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&quot;com/zl/mybatis/dao/PromotionMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;
+11:39:18,136 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/PromotionMapper.xml
+11:39:18,137 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/PromotionMapper.xml
+11:39:18,168 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:18,170 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserAnswerRecordMapper.class
+11:39:18,170 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserAnswerRecordMapper.class
+11:39:18,171 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#20;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;)com/zl/mybatis/dao/UserAnswerRecordMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#23;getUserAnswerRecordList&amp;#1;&amp;#0;;(Lcom/zl/mybatis/entity/UserAnswerQueryVo;)Ljava/util/List;&amp;#1;&amp;#0;	Signature&amp;#1;&amp;#0;c(Lcom/zl/mybatis/entity/UserAnswerQueryVo;)Ljava/util/List&lt;Lcom/zl/mybatis/pojo/UserAnswerRecord;&gt;;&amp;#1;&amp;#0;&amp;#22;delAnswerEvertRuleById&amp;#1;&amp;#0;&amp;#21;(Ljava/lang/String;)I&amp;#1;&amp;#0;&amp;#25;selectAnswerEvertRuleById&amp;#1;&amp;#0;$(Ljava/lang/String;)Ljava/util/List;&amp;#1;&amp;#0;9(Ljava/lang/String;)Ljava/util/List&lt;Ljava/lang/Integer;&gt;;&amp;#1;&amp;#0;&amp;#23;delAnswerEventConfnById&amp;#1;&amp;#0;&amp;#24;getUserAnswerRecordList1&amp;#1;&amp;#0;&amp;#15;insertRdoEnitiy&amp;#1;&amp;#0;&apos;(Lcom/zl/mybatis/entity/RdoOrderInfo;)V&amp;#1;&amp;#0;
+11:39:18,173 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserAnswerRecordMapper.xml
+11:39:18,173 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserAnswerRecordMapper.xml
+11:39:18,210 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:18,211 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserMapper.class
+11:39:18,212 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserMapper.class
+11:39:18,213 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0; &amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#29;com/zl/mybatis/dao/UserMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#11;getUserById&amp;#1;&amp;#0;&amp;#29;(I)Lcom/zl/mybatis/pojo/User;&amp;#1;&amp;#0;
+11:39:18,214 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserMapper.xml
+11:39:18,214 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserMapper.xml
+11:39:18,241 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:18,242 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.OrderMapper matches criteria [is assignable to Object]
+11:39:18,244 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.OrderResultTypeMapper matches criteria [is assignable to Object]
+11:39:18,245 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.PromotionMapper matches criteria [is assignable to Object]
+11:39:18,247 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.UserAnswerRecordMapper matches criteria [is assignable to Object]
+11:39:18,248 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.UserMapper matches criteria [is assignable to Object]
+11:39:18,520 DEBUG CacheManager:744 - Creating new CacheManager with InputStream
+11:39:18,533 DEBUG ConfigurationFactory:148 - Configuring ehcache from InputStream
+11:39:18,563 DEBUG BeanHandler:270 - Ignoring ehcache attribute xmlns:xsi
+11:39:18,564 DEBUG BeanHandler:270 - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+11:39:18,565 DEBUG DiskStoreConfiguration:110 - Disk Store Path: e:\
+11:39:18,568 DEBUG DiskStoreConfiguration:110 - Disk Store Path: C:\Users\Administrator\AppData\Local\Temp\
+11:39:18,609 DEBUG CacheManager:640 - Creating new CacheManager with default config
+11:39:18,610 DEBUG CacheManager:505 - Configuring ehcache from classpath.
+11:39:18,611 DEBUG ConfigurationFactory:130 - Configuring ehcache from ehcache.xml found in the classpath: file:/E:/develop/workSpaceSelf/exercise/target/classes/ehcache.xml
+11:39:18,612 DEBUG ConfigurationFactory:96 - Configuring ehcache from URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/ehcache.xml
+11:39:18,612 DEBUG ConfigurationFactory:148 - Configuring ehcache from InputStream
+11:39:18,615 DEBUG BeanHandler:270 - Ignoring ehcache attribute xmlns:xsi
+11:39:18,616 DEBUG BeanHandler:270 - Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+11:39:18,617 DEBUG DiskStoreConfiguration:110 - Disk Store Path: e:\
+11:39:18,618 DEBUG DiskStoreConfiguration:110 - Disk Store Path: C:\Users\Administrator\AppData\Local\Temp\
+</system-out>
+  </testcase>
+  <testcase classname="com.poi.OrderDaoTest" name="fis" time="0.178">
+    <error message="Could not initialize class org.mybatis.caches.ehcache.EhcacheCache" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class org.mybatis.caches.ehcache.EhcacheCache
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:186)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.cacheElement(XMLMapperBuilder.java:202)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:114)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:173)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:124)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.binding.MapperRegistry.addMappers(MapperRegistry.java:97)
+	at org.apache.ibatis.binding.MapperRegistry.addMappers(MapperRegistry.java:105)
+	at org.apache.ibatis.session.Configuration.addMappers(Configuration.java:724)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:360)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:98)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:78)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
+	at com.zl.utils.MyBatisUtils.getnewInstance(MyBatisUtils.java:28)
+	at com.poi.OrderDaoTest.before(OrderDaoTest.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>11:39:18,639 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo
+11:39:18,640 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo
+11:39:18,641 DEBUG DefaultVFS:102 - Reader entry: Items.class
+11:39:18,641 DEBUG DefaultVFS:102 - Reader entry: Orderdetail.class
+11:39:18,641 DEBUG DefaultVFS:102 - Reader entry: Orders.class
+11:39:18,642 DEBUG DefaultVFS:102 - Reader entry: OrdersCustom.class
+11:39:18,642 DEBUG DefaultVFS:102 - Reader entry: QueryVo.class
+11:39:18,643 DEBUG DefaultVFS:102 - Reader entry: User.class
+11:39:18,643 DEBUG DefaultVFS:102 - Reader entry: UserAnswerRecord.class
+11:39:18,643 DEBUG DefaultVFS:102 - Reader entry: UserCustom.class
+11:39:18,644 DEBUG DefaultVFS:113 - Listing file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo
+11:39:18,644 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Items.class
+11:39:18,645 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Items.class
+11:39:18,646 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;k&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#25;com/zl/mybatis/pojo/Items&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#7;&amp;#0;&amp;#6;&amp;#1;&amp;#0;&amp;#20;java/io/Serializable&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#19;Ljava/lang/Integer;&amp;#1;&amp;#0;&amp;#4;name&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;&amp;#5;price&amp;#1;&amp;#0;&amp;#17;Ljava/lang/Float;&amp;#1;&amp;#0;&amp;#3;pic&amp;#1;&amp;#0;
+11:39:18,646 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Orderdetail.class
+11:39:18,647 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Orderdetail.class
+11:39:18,648 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;K&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#31;com/zl/mybatis/pojo/Orderdetail&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#7;&amp;#0;&amp;#6;&amp;#1;&amp;#0;&amp;#20;java/io/Serializable&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#19;Ljava/lang/Integer;&amp;#1;&amp;#0;&amp;#8;ordersId&amp;#1;&amp;#0;&amp;#7;itemsId&amp;#1;&amp;#0;&amp;#8;itemsNum&amp;#1;&amp;#0;&amp;#5;items&amp;#1;&amp;#0;&amp;#27;Lcom/zl/mybatis/pojo/Items;&amp;#1;&amp;#0;&amp;#6;&lt;init&gt;&amp;#1;&amp;#0;&amp;#3;()V&amp;#1;&amp;#0;&amp;#4;Code
+11:39:18,648 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Orders.class
+11:39:18,648 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Orders.class
+11:39:18,649 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;m&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#26;com/zl/mybatis/pojo/Orders&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#7;&amp;#0;&amp;#6;&amp;#1;&amp;#0;&amp;#20;java/io/Serializable&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#19;Ljava/lang/Integer;&amp;#1;&amp;#0;&amp;#6;userId&amp;#1;&amp;#0;&amp;#6;number&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;
+11:39:18,649 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/OrdersCustom.class
+11:39:18,650 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/OrdersCustom.class
+11:39:18,651 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#29;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0; com/zl/mybatis/pojo/OrdersCustom&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#26;com/zl/mybatis/pojo/Orders&amp;#1;&amp;#0;&amp;#8;username&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;&amp;#7;address&amp;#1;&amp;#0;&amp;#6;&lt;init&gt;&amp;#1;&amp;#0;&amp;#3;()V&amp;#1;&amp;#0;&amp;#4;Code
+11:39:18,652 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/QueryVo.class
+11:39:18,652 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/QueryVo.class
+11:39:18,653 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0; &amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#27;com/zl/mybatis/pojo/QueryVo&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#4;user&amp;#1;&amp;#0;&amp;#26;Lcom/zl/mybatis/pojo/User;&amp;#1;&amp;#0;
+11:39:18,654 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/User.class
+11:39:18,654 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/User.class
+11:39:18,655 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;U&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#24;com/zl/mybatis/pojo/User&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#7;&amp;#0;&amp;#6;&amp;#1;&amp;#0;&amp;#20;java/io/Serializable&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#1;I&amp;#1;&amp;#0;&amp;#8;username&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;&amp;#3;sex&amp;#1;&amp;#0;&amp;#8;birthday&amp;#1;&amp;#0;&amp;#16;Ljava/util/Date;&amp;#1;&amp;#0;&amp;#7;address&amp;#1;&amp;#0;&amp;#6;orders&amp;#1;&amp;#0;&amp;#16;Ljava/util/List;&amp;#1;&amp;#0;	Signature&amp;#1;&amp;#0;.Ljava/util/List&lt;Lcom/zl/mybatis/pojo/Orders;&gt;;&amp;#1;&amp;#0;&amp;#6;&lt;init&gt;&amp;#1;&amp;#0;&amp;#3;()V&amp;#1;&amp;#0;&amp;#4;Code
+11:39:18,656 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/UserAnswerRecord.class
+11:39:18,656 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/UserAnswerRecord.class
+11:39:18,657 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;?&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;$com/zl/mybatis/pojo/UserAnswerRecord&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;&amp;#7;eventid&amp;#1;&amp;#0;
+11:39:18,657 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/UserCustom.class
+11:39:18,658 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/UserCustom.class
+11:39:18,658 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#19;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#30;com/zl/mybatis/pojo/UserCustom&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#24;com/zl/mybatis/pojo/User&amp;#1;&amp;#0;&amp;#14;birthday_start&amp;#1;&amp;#0;&amp;#16;Ljava/util/Date;&amp;#1;&amp;#0;&amp;#12;birthday_end&amp;#1;&amp;#0;&amp;#6;&lt;init&gt;&amp;#1;&amp;#0;&amp;#3;()V&amp;#1;&amp;#0;&amp;#4;Code
+11:39:18,658 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.Items matches criteria [is assignable to Object]
+11:39:18,659 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.Orderdetail matches criteria [is assignable to Object]
+11:39:18,659 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.Orders matches criteria [is assignable to Object]
+11:39:18,659 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.OrdersCustom matches criteria [is assignable to Object]
+11:39:18,659 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.QueryVo matches criteria [is assignable to Object]
+11:39:18,659 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.User matches criteria [is assignable to Object]
+11:39:18,660 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.UserAnswerRecord matches criteria [is assignable to Object]
+11:39:18,660 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.UserCustom matches criteria [is assignable to Object]
+11:39:18,663 DEBUG LogFactory:135 - Logging initialized using &apos;class org.apache.ibatis.logging.log4j.Log4jImpl&apos; adapter.
+11:39:18,667 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:18,667 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:18,668 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:18,668 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:18,672 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao
+11:39:18,672 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao
+11:39:18,674 DEBUG DefaultVFS:102 - Reader entry: OrderMapper.class
+11:39:18,674 DEBUG DefaultVFS:102 - Reader entry: OrderMapper.xml
+11:39:18,675 DEBUG DefaultVFS:102 - Reader entry: OrderResultTypeMapper.class
+11:39:18,675 DEBUG DefaultVFS:102 - Reader entry: OrderResultTypeMapper.xml
+11:39:18,675 DEBUG DefaultVFS:102 - Reader entry: PromotionMapper.class
+11:39:18,676 DEBUG DefaultVFS:102 - Reader entry: PromotionMapper.xml
+11:39:18,676 DEBUG DefaultVFS:102 - Reader entry: UserAnswerRecordMapper.class
+11:39:18,677 DEBUG DefaultVFS:102 - Reader entry: UserAnswerRecordMapper.xml
+11:39:18,677 DEBUG DefaultVFS:102 - Reader entry: UserMapper.class
+11:39:18,677 DEBUG DefaultVFS:102 - Reader entry: UserMapper.xml
+11:39:18,678 DEBUG DefaultVFS:113 - Listing file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao
+11:39:18,678 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderMapper.class
+11:39:18,678 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderMapper.class
+11:39:18,678 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#17;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#30;com/zl/mybatis/dao/OrderMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#22;findOrderListResultMap&amp;#1;&amp;#0;&amp;#18;()Ljava/util/List;&amp;#1;&amp;#0;
+11:39:18,679 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderMapper.xml
+11:39:18,679 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderMapper.xml
+11:39:18,680 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:18,680 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderResultTypeMapper.class
+11:39:18,680 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderResultTypeMapper.class
+11:39:18,681 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#14;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;(com/zl/mybatis/dao/OrderResultTypeMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#23;findOrderListResultType&amp;#1;&amp;#0;&amp;#18;()Ljava/util/List;&amp;#1;&amp;#0;
+11:39:18,681 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderResultTypeMapper.xml
+11:39:18,681 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderResultTypeMapper.xml
+11:39:18,682 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:18,683 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/PromotionMapper.class
+11:39:18,684 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/PromotionMapper.class
+11:39:18,685 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#19;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&quot;com/zl/mybatis/dao/PromotionMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;
+11:39:18,685 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/PromotionMapper.xml
+11:39:18,686 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/PromotionMapper.xml
+11:39:18,686 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:18,687 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserAnswerRecordMapper.class
+11:39:18,687 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserAnswerRecordMapper.class
+11:39:18,688 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#20;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;)com/zl/mybatis/dao/UserAnswerRecordMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#23;getUserAnswerRecordList&amp;#1;&amp;#0;;(Lcom/zl/mybatis/entity/UserAnswerQueryVo;)Ljava/util/List;&amp;#1;&amp;#0;	Signature&amp;#1;&amp;#0;c(Lcom/zl/mybatis/entity/UserAnswerQueryVo;)Ljava/util/List&lt;Lcom/zl/mybatis/pojo/UserAnswerRecord;&gt;;&amp;#1;&amp;#0;&amp;#22;delAnswerEvertRuleById&amp;#1;&amp;#0;&amp;#21;(Ljava/lang/String;)I&amp;#1;&amp;#0;&amp;#25;selectAnswerEvertRuleById&amp;#1;&amp;#0;$(Ljava/lang/String;)Ljava/util/List;&amp;#1;&amp;#0;9(Ljava/lang/String;)Ljava/util/List&lt;Ljava/lang/Integer;&gt;;&amp;#1;&amp;#0;&amp;#23;delAnswerEventConfnById&amp;#1;&amp;#0;&amp;#24;getUserAnswerRecordList1&amp;#1;&amp;#0;&amp;#15;insertRdoEnitiy&amp;#1;&amp;#0;&apos;(Lcom/zl/mybatis/entity/RdoOrderInfo;)V&amp;#1;&amp;#0;
+11:39:18,688 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserAnswerRecordMapper.xml
+11:39:18,689 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserAnswerRecordMapper.xml
+11:39:18,689 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:18,690 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserMapper.class
+11:39:18,690 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserMapper.class
+11:39:18,690 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0; &amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#29;com/zl/mybatis/dao/UserMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#11;getUserById&amp;#1;&amp;#0;&amp;#29;(I)Lcom/zl/mybatis/pojo/User;&amp;#1;&amp;#0;
+11:39:18,691 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserMapper.xml
+11:39:18,691 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserMapper.xml
+11:39:18,691 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:18,692 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.OrderMapper matches criteria [is assignable to Object]
+11:39:18,692 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.OrderResultTypeMapper matches criteria [is assignable to Object]
+11:39:18,692 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.PromotionMapper matches criteria [is assignable to Object]
+11:39:18,692 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.UserAnswerRecordMapper matches criteria [is assignable to Object]
+11:39:18,693 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.UserMapper matches criteria [is assignable to Object]
+11:39:18,752 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+</system-out>
+  </testcase>
+  <testcase classname="com.poi.OrderDaoTest" name="sheet" time="0.112">
+    <error message="Could not initialize class org.mybatis.caches.ehcache.EhcacheCache" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class org.mybatis.caches.ehcache.EhcacheCache
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:186)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.cacheElement(XMLMapperBuilder.java:202)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:114)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:173)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:124)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.binding.MapperRegistry.addMappers(MapperRegistry.java:97)
+	at org.apache.ibatis.binding.MapperRegistry.addMappers(MapperRegistry.java:105)
+	at org.apache.ibatis.session.Configuration.addMappers(Configuration.java:724)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:360)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:98)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:78)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
+	at com.zl.utils.MyBatisUtils.getnewInstance(MyBatisUtils.java:28)
+	at com.poi.OrderDaoTest.before(OrderDaoTest.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>11:39:18,820 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo
+11:39:18,820 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo
+11:39:18,821 DEBUG DefaultVFS:102 - Reader entry: Items.class
+11:39:18,822 DEBUG DefaultVFS:102 - Reader entry: Orderdetail.class
+11:39:18,822 DEBUG DefaultVFS:102 - Reader entry: Orders.class
+11:39:18,823 DEBUG DefaultVFS:102 - Reader entry: OrdersCustom.class
+11:39:18,823 DEBUG DefaultVFS:102 - Reader entry: QueryVo.class
+11:39:18,824 DEBUG DefaultVFS:102 - Reader entry: User.class
+11:39:18,824 DEBUG DefaultVFS:102 - Reader entry: UserAnswerRecord.class
+11:39:18,825 DEBUG DefaultVFS:102 - Reader entry: UserCustom.class
+11:39:18,825 DEBUG DefaultVFS:113 - Listing file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo
+11:39:18,825 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Items.class
+11:39:18,826 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Items.class
+11:39:18,827 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;k&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#25;com/zl/mybatis/pojo/Items&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#7;&amp;#0;&amp;#6;&amp;#1;&amp;#0;&amp;#20;java/io/Serializable&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#19;Ljava/lang/Integer;&amp;#1;&amp;#0;&amp;#4;name&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;&amp;#5;price&amp;#1;&amp;#0;&amp;#17;Ljava/lang/Float;&amp;#1;&amp;#0;&amp;#3;pic&amp;#1;&amp;#0;
+11:39:18,827 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Orderdetail.class
+11:39:18,828 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Orderdetail.class
+11:39:18,828 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;K&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#31;com/zl/mybatis/pojo/Orderdetail&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#7;&amp;#0;&amp;#6;&amp;#1;&amp;#0;&amp;#20;java/io/Serializable&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#19;Ljava/lang/Integer;&amp;#1;&amp;#0;&amp;#8;ordersId&amp;#1;&amp;#0;&amp;#7;itemsId&amp;#1;&amp;#0;&amp;#8;itemsNum&amp;#1;&amp;#0;&amp;#5;items&amp;#1;&amp;#0;&amp;#27;Lcom/zl/mybatis/pojo/Items;&amp;#1;&amp;#0;&amp;#6;&lt;init&gt;&amp;#1;&amp;#0;&amp;#3;()V&amp;#1;&amp;#0;&amp;#4;Code
+11:39:18,829 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Orders.class
+11:39:18,829 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Orders.class
+11:39:18,830 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;m&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#26;com/zl/mybatis/pojo/Orders&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#7;&amp;#0;&amp;#6;&amp;#1;&amp;#0;&amp;#20;java/io/Serializable&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#19;Ljava/lang/Integer;&amp;#1;&amp;#0;&amp;#6;userId&amp;#1;&amp;#0;&amp;#6;number&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;
+11:39:18,830 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/OrdersCustom.class
+11:39:18,831 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/OrdersCustom.class
+11:39:18,835 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#29;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0; com/zl/mybatis/pojo/OrdersCustom&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#26;com/zl/mybatis/pojo/Orders&amp;#1;&amp;#0;&amp;#8;username&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;&amp;#7;address&amp;#1;&amp;#0;&amp;#6;&lt;init&gt;&amp;#1;&amp;#0;&amp;#3;()V&amp;#1;&amp;#0;&amp;#4;Code
+11:39:18,836 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/QueryVo.class
+11:39:18,837 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/QueryVo.class
+11:39:18,837 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0; &amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#27;com/zl/mybatis/pojo/QueryVo&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#4;user&amp;#1;&amp;#0;&amp;#26;Lcom/zl/mybatis/pojo/User;&amp;#1;&amp;#0;
+11:39:18,838 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/User.class
+11:39:18,838 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/User.class
+11:39:18,839 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;U&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#24;com/zl/mybatis/pojo/User&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#7;&amp;#0;&amp;#6;&amp;#1;&amp;#0;&amp;#20;java/io/Serializable&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#1;I&amp;#1;&amp;#0;&amp;#8;username&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;&amp;#3;sex&amp;#1;&amp;#0;&amp;#8;birthday&amp;#1;&amp;#0;&amp;#16;Ljava/util/Date;&amp;#1;&amp;#0;&amp;#7;address&amp;#1;&amp;#0;&amp;#6;orders&amp;#1;&amp;#0;&amp;#16;Ljava/util/List;&amp;#1;&amp;#0;	Signature&amp;#1;&amp;#0;.Ljava/util/List&lt;Lcom/zl/mybatis/pojo/Orders;&gt;;&amp;#1;&amp;#0;&amp;#6;&lt;init&gt;&amp;#1;&amp;#0;&amp;#3;()V&amp;#1;&amp;#0;&amp;#4;Code
+11:39:18,840 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/UserAnswerRecord.class
+11:39:18,840 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/UserAnswerRecord.class
+11:39:18,841 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;?&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;$com/zl/mybatis/pojo/UserAnswerRecord&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;&amp;#7;eventid&amp;#1;&amp;#0;
+11:39:18,842 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/UserCustom.class
+11:39:18,842 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/UserCustom.class
+11:39:18,843 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#19;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#30;com/zl/mybatis/pojo/UserCustom&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#24;com/zl/mybatis/pojo/User&amp;#1;&amp;#0;&amp;#14;birthday_start&amp;#1;&amp;#0;&amp;#16;Ljava/util/Date;&amp;#1;&amp;#0;&amp;#12;birthday_end&amp;#1;&amp;#0;&amp;#6;&lt;init&gt;&amp;#1;&amp;#0;&amp;#3;()V&amp;#1;&amp;#0;&amp;#4;Code
+11:39:18,843 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.Items matches criteria [is assignable to Object]
+11:39:18,843 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.Orderdetail matches criteria [is assignable to Object]
+11:39:18,844 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.Orders matches criteria [is assignable to Object]
+11:39:18,844 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.OrdersCustom matches criteria [is assignable to Object]
+11:39:18,844 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.QueryVo matches criteria [is assignable to Object]
+11:39:18,845 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.User matches criteria [is assignable to Object]
+11:39:18,845 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.UserAnswerRecord matches criteria [is assignable to Object]
+11:39:18,845 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.UserCustom matches criteria [is assignable to Object]
+11:39:18,849 DEBUG LogFactory:135 - Logging initialized using &apos;class org.apache.ibatis.logging.log4j.Log4jImpl&apos; adapter.
+11:39:18,855 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:18,855 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:18,855 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:18,856 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:18,858 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao
+11:39:18,858 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao
+11:39:18,859 DEBUG DefaultVFS:102 - Reader entry: OrderMapper.class
+11:39:18,860 DEBUG DefaultVFS:102 - Reader entry: OrderMapper.xml
+11:39:18,860 DEBUG DefaultVFS:102 - Reader entry: OrderResultTypeMapper.class
+11:39:18,861 DEBUG DefaultVFS:102 - Reader entry: OrderResultTypeMapper.xml
+11:39:18,861 DEBUG DefaultVFS:102 - Reader entry: PromotionMapper.class
+11:39:18,862 DEBUG DefaultVFS:102 - Reader entry: PromotionMapper.xml
+11:39:18,862 DEBUG DefaultVFS:102 - Reader entry: UserAnswerRecordMapper.class
+11:39:18,863 DEBUG DefaultVFS:102 - Reader entry: UserAnswerRecordMapper.xml
+11:39:18,863 DEBUG DefaultVFS:102 - Reader entry: UserMapper.class
+11:39:18,864 DEBUG DefaultVFS:102 - Reader entry: UserMapper.xml
+11:39:18,864 DEBUG DefaultVFS:113 - Listing file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao
+11:39:18,865 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderMapper.class
+11:39:18,865 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderMapper.class
+11:39:18,866 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#17;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#30;com/zl/mybatis/dao/OrderMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#22;findOrderListResultMap&amp;#1;&amp;#0;&amp;#18;()Ljava/util/List;&amp;#1;&amp;#0;
+11:39:18,866 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderMapper.xml
+11:39:18,866 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderMapper.xml
+11:39:18,867 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:18,867 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderResultTypeMapper.class
+11:39:18,867 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderResultTypeMapper.class
+11:39:18,868 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#14;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;(com/zl/mybatis/dao/OrderResultTypeMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#23;findOrderListResultType&amp;#1;&amp;#0;&amp;#18;()Ljava/util/List;&amp;#1;&amp;#0;
+11:39:18,868 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderResultTypeMapper.xml
+11:39:18,868 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderResultTypeMapper.xml
+11:39:18,869 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:18,869 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/PromotionMapper.class
+11:39:18,869 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/PromotionMapper.class
+11:39:18,870 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#19;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&quot;com/zl/mybatis/dao/PromotionMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;
+11:39:18,870 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/PromotionMapper.xml
+11:39:18,870 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/PromotionMapper.xml
+11:39:18,871 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:18,871 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserAnswerRecordMapper.class
+11:39:18,872 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserAnswerRecordMapper.class
+11:39:18,872 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#20;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;)com/zl/mybatis/dao/UserAnswerRecordMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#23;getUserAnswerRecordList&amp;#1;&amp;#0;;(Lcom/zl/mybatis/entity/UserAnswerQueryVo;)Ljava/util/List;&amp;#1;&amp;#0;	Signature&amp;#1;&amp;#0;c(Lcom/zl/mybatis/entity/UserAnswerQueryVo;)Ljava/util/List&lt;Lcom/zl/mybatis/pojo/UserAnswerRecord;&gt;;&amp;#1;&amp;#0;&amp;#22;delAnswerEvertRuleById&amp;#1;&amp;#0;&amp;#21;(Ljava/lang/String;)I&amp;#1;&amp;#0;&amp;#25;selectAnswerEvertRuleById&amp;#1;&amp;#0;$(Ljava/lang/String;)Ljava/util/List;&amp;#1;&amp;#0;9(Ljava/lang/String;)Ljava/util/List&lt;Ljava/lang/Integer;&gt;;&amp;#1;&amp;#0;&amp;#23;delAnswerEventConfnById&amp;#1;&amp;#0;&amp;#24;getUserAnswerRecordList1&amp;#1;&amp;#0;&amp;#15;insertRdoEnitiy&amp;#1;&amp;#0;&apos;(Lcom/zl/mybatis/entity/RdoOrderInfo;)V&amp;#1;&amp;#0;
+11:39:18,873 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserAnswerRecordMapper.xml
+11:39:18,873 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserAnswerRecordMapper.xml
+11:39:18,874 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:18,874 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserMapper.class
+11:39:18,875 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserMapper.class
+11:39:18,875 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0; &amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#29;com/zl/mybatis/dao/UserMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#11;getUserById&amp;#1;&amp;#0;&amp;#29;(I)Lcom/zl/mybatis/pojo/User;&amp;#1;&amp;#0;
+11:39:18,876 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserMapper.xml
+11:39:18,876 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserMapper.xml
+11:39:18,876 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:18,877 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.OrderMapper matches criteria [is assignable to Object]
+11:39:18,877 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.OrderResultTypeMapper matches criteria [is assignable to Object]
+11:39:18,877 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.PromotionMapper matches criteria [is assignable to Object]
+11:39:18,877 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.UserAnswerRecordMapper matches criteria [is assignable to Object]
+11:39:18,877 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.UserMapper matches criteria [is assignable to Object]
+</system-out>
+  </testcase>
+  <testcase classname="com.poi.OrderDaoTest" name="XSSF" time="0.143">
+    <error message="Could not initialize class org.mybatis.caches.ehcache.EhcacheCache" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class org.mybatis.caches.ehcache.EhcacheCache
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:186)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.cacheElement(XMLMapperBuilder.java:202)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:114)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:173)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:124)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.binding.MapperRegistry.addMappers(MapperRegistry.java:97)
+	at org.apache.ibatis.binding.MapperRegistry.addMappers(MapperRegistry.java:105)
+	at org.apache.ibatis.session.Configuration.addMappers(Configuration.java:724)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:360)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:98)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:78)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
+	at com.zl.utils.MyBatisUtils.getnewInstance(MyBatisUtils.java:28)
+	at com.poi.OrderDaoTest.before(OrderDaoTest.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>11:39:18,930 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo
+11:39:18,930 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo
+11:39:18,931 DEBUG DefaultVFS:102 - Reader entry: Items.class
+11:39:18,932 DEBUG DefaultVFS:102 - Reader entry: Orderdetail.class
+11:39:18,933 DEBUG DefaultVFS:102 - Reader entry: Orders.class
+11:39:18,933 DEBUG DefaultVFS:102 - Reader entry: OrdersCustom.class
+11:39:18,933 DEBUG DefaultVFS:102 - Reader entry: QueryVo.class
+11:39:18,934 DEBUG DefaultVFS:102 - Reader entry: User.class
+11:39:18,934 DEBUG DefaultVFS:102 - Reader entry: UserAnswerRecord.class
+11:39:18,934 DEBUG DefaultVFS:102 - Reader entry: UserCustom.class
+11:39:18,935 DEBUG DefaultVFS:113 - Listing file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo
+11:39:18,935 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Items.class
+11:39:18,935 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Items.class
+11:39:18,936 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;k&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#25;com/zl/mybatis/pojo/Items&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#7;&amp;#0;&amp;#6;&amp;#1;&amp;#0;&amp;#20;java/io/Serializable&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#19;Ljava/lang/Integer;&amp;#1;&amp;#0;&amp;#4;name&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;&amp;#5;price&amp;#1;&amp;#0;&amp;#17;Ljava/lang/Float;&amp;#1;&amp;#0;&amp;#3;pic&amp;#1;&amp;#0;
+11:39:18,936 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Orderdetail.class
+11:39:18,937 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Orderdetail.class
+11:39:18,937 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;K&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#31;com/zl/mybatis/pojo/Orderdetail&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#7;&amp;#0;&amp;#6;&amp;#1;&amp;#0;&amp;#20;java/io/Serializable&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#19;Ljava/lang/Integer;&amp;#1;&amp;#0;&amp;#8;ordersId&amp;#1;&amp;#0;&amp;#7;itemsId&amp;#1;&amp;#0;&amp;#8;itemsNum&amp;#1;&amp;#0;&amp;#5;items&amp;#1;&amp;#0;&amp;#27;Lcom/zl/mybatis/pojo/Items;&amp;#1;&amp;#0;&amp;#6;&lt;init&gt;&amp;#1;&amp;#0;&amp;#3;()V&amp;#1;&amp;#0;&amp;#4;Code
+11:39:18,938 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Orders.class
+11:39:18,938 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Orders.class
+11:39:18,939 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;m&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#26;com/zl/mybatis/pojo/Orders&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#7;&amp;#0;&amp;#6;&amp;#1;&amp;#0;&amp;#20;java/io/Serializable&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#19;Ljava/lang/Integer;&amp;#1;&amp;#0;&amp;#6;userId&amp;#1;&amp;#0;&amp;#6;number&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;
+11:39:18,939 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/OrdersCustom.class
+11:39:18,940 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/OrdersCustom.class
+11:39:18,940 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#29;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0; com/zl/mybatis/pojo/OrdersCustom&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#26;com/zl/mybatis/pojo/Orders&amp;#1;&amp;#0;&amp;#8;username&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;&amp;#7;address&amp;#1;&amp;#0;&amp;#6;&lt;init&gt;&amp;#1;&amp;#0;&amp;#3;()V&amp;#1;&amp;#0;&amp;#4;Code
+11:39:18,941 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/QueryVo.class
+11:39:18,941 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/QueryVo.class
+11:39:18,942 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0; &amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#27;com/zl/mybatis/pojo/QueryVo&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#4;user&amp;#1;&amp;#0;&amp;#26;Lcom/zl/mybatis/pojo/User;&amp;#1;&amp;#0;
+11:39:18,942 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/User.class
+11:39:18,942 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/User.class
+11:39:18,943 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;U&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#24;com/zl/mybatis/pojo/User&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#7;&amp;#0;&amp;#6;&amp;#1;&amp;#0;&amp;#20;java/io/Serializable&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#1;I&amp;#1;&amp;#0;&amp;#8;username&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;&amp;#3;sex&amp;#1;&amp;#0;&amp;#8;birthday&amp;#1;&amp;#0;&amp;#16;Ljava/util/Date;&amp;#1;&amp;#0;&amp;#7;address&amp;#1;&amp;#0;&amp;#6;orders&amp;#1;&amp;#0;&amp;#16;Ljava/util/List;&amp;#1;&amp;#0;	Signature&amp;#1;&amp;#0;.Ljava/util/List&lt;Lcom/zl/mybatis/pojo/Orders;&gt;;&amp;#1;&amp;#0;&amp;#6;&lt;init&gt;&amp;#1;&amp;#0;&amp;#3;()V&amp;#1;&amp;#0;&amp;#4;Code
+11:39:18,943 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/UserAnswerRecord.class
+11:39:18,944 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/UserAnswerRecord.class
+11:39:18,944 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;?&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;$com/zl/mybatis/pojo/UserAnswerRecord&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;&amp;#7;eventid&amp;#1;&amp;#0;
+11:39:18,945 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/UserCustom.class
+11:39:18,945 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/UserCustom.class
+11:39:18,945 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#19;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#30;com/zl/mybatis/pojo/UserCustom&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#24;com/zl/mybatis/pojo/User&amp;#1;&amp;#0;&amp;#14;birthday_start&amp;#1;&amp;#0;&amp;#16;Ljava/util/Date;&amp;#1;&amp;#0;&amp;#12;birthday_end&amp;#1;&amp;#0;&amp;#6;&lt;init&gt;&amp;#1;&amp;#0;&amp;#3;()V&amp;#1;&amp;#0;&amp;#4;Code
+11:39:18,946 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.Items matches criteria [is assignable to Object]
+11:39:18,946 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.Orderdetail matches criteria [is assignable to Object]
+11:39:18,946 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.Orders matches criteria [is assignable to Object]
+11:39:18,946 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.OrdersCustom matches criteria [is assignable to Object]
+11:39:18,947 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.QueryVo matches criteria [is assignable to Object]
+11:39:18,947 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.User matches criteria [is assignable to Object]
+11:39:18,947 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.UserAnswerRecord matches criteria [is assignable to Object]
+11:39:18,947 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.UserCustom matches criteria [is assignable to Object]
+11:39:18,950 DEBUG LogFactory:135 - Logging initialized using &apos;class org.apache.ibatis.logging.log4j.Log4jImpl&apos; adapter.
+11:39:18,956 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:18,956 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:18,957 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:18,957 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:18,960 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao
+11:39:18,960 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao
+11:39:18,961 DEBUG DefaultVFS:102 - Reader entry: OrderMapper.class
+11:39:18,962 DEBUG DefaultVFS:102 - Reader entry: OrderMapper.xml
+11:39:18,962 DEBUG DefaultVFS:102 - Reader entry: OrderResultTypeMapper.class
+11:39:18,962 DEBUG DefaultVFS:102 - Reader entry: OrderResultTypeMapper.xml
+11:39:18,963 DEBUG DefaultVFS:102 - Reader entry: PromotionMapper.class
+11:39:18,963 DEBUG DefaultVFS:102 - Reader entry: PromotionMapper.xml
+11:39:18,963 DEBUG DefaultVFS:102 - Reader entry: UserAnswerRecordMapper.class
+11:39:18,964 DEBUG DefaultVFS:102 - Reader entry: UserAnswerRecordMapper.xml
+11:39:18,964 DEBUG DefaultVFS:102 - Reader entry: UserMapper.class
+11:39:18,964 DEBUG DefaultVFS:102 - Reader entry: UserMapper.xml
+11:39:18,965 DEBUG DefaultVFS:113 - Listing file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao
+11:39:18,965 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderMapper.class
+11:39:18,965 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderMapper.class
+11:39:18,966 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#17;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#30;com/zl/mybatis/dao/OrderMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#22;findOrderListResultMap&amp;#1;&amp;#0;&amp;#18;()Ljava/util/List;&amp;#1;&amp;#0;
+11:39:18,967 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderMapper.xml
+11:39:18,967 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderMapper.xml
+11:39:18,967 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:18,968 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderResultTypeMapper.class
+11:39:18,968 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderResultTypeMapper.class
+11:39:18,969 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#14;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;(com/zl/mybatis/dao/OrderResultTypeMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#23;findOrderListResultType&amp;#1;&amp;#0;&amp;#18;()Ljava/util/List;&amp;#1;&amp;#0;
+11:39:18,969 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderResultTypeMapper.xml
+11:39:18,970 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderResultTypeMapper.xml
+11:39:18,970 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:18,970 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/PromotionMapper.class
+11:39:18,971 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/PromotionMapper.class
+11:39:18,971 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#19;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&quot;com/zl/mybatis/dao/PromotionMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;
+11:39:18,972 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/PromotionMapper.xml
+11:39:18,972 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/PromotionMapper.xml
+11:39:18,973 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:18,973 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserAnswerRecordMapper.class
+11:39:18,973 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserAnswerRecordMapper.class
+11:39:18,974 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#20;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;)com/zl/mybatis/dao/UserAnswerRecordMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#23;getUserAnswerRecordList&amp;#1;&amp;#0;;(Lcom/zl/mybatis/entity/UserAnswerQueryVo;)Ljava/util/List;&amp;#1;&amp;#0;	Signature&amp;#1;&amp;#0;c(Lcom/zl/mybatis/entity/UserAnswerQueryVo;)Ljava/util/List&lt;Lcom/zl/mybatis/pojo/UserAnswerRecord;&gt;;&amp;#1;&amp;#0;&amp;#22;delAnswerEvertRuleById&amp;#1;&amp;#0;&amp;#21;(Ljava/lang/String;)I&amp;#1;&amp;#0;&amp;#25;selectAnswerEvertRuleById&amp;#1;&amp;#0;$(Ljava/lang/String;)Ljava/util/List;&amp;#1;&amp;#0;9(Ljava/lang/String;)Ljava/util/List&lt;Ljava/lang/Integer;&gt;;&amp;#1;&amp;#0;&amp;#23;delAnswerEventConfnById&amp;#1;&amp;#0;&amp;#24;getUserAnswerRecordList1&amp;#1;&amp;#0;&amp;#15;insertRdoEnitiy&amp;#1;&amp;#0;&apos;(Lcom/zl/mybatis/entity/RdoOrderInfo;)V&amp;#1;&amp;#0;
+11:39:18,975 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserAnswerRecordMapper.xml
+11:39:18,976 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserAnswerRecordMapper.xml
+11:39:18,977 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:18,978 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserMapper.class
+11:39:18,978 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserMapper.class
+11:39:18,979 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0; &amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#29;com/zl/mybatis/dao/UserMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#11;getUserById&amp;#1;&amp;#0;&amp;#29;(I)Lcom/zl/mybatis/pojo/User;&amp;#1;&amp;#0;
+11:39:18,979 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserMapper.xml
+11:39:18,980 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserMapper.xml
+11:39:18,980 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:18,981 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.OrderMapper matches criteria [is assignable to Object]
+11:39:18,982 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.OrderResultTypeMapper matches criteria [is assignable to Object]
+11:39:18,982 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.PromotionMapper matches criteria [is assignable to Object]
+11:39:18,982 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.UserAnswerRecordMapper matches criteria [is assignable to Object]
+11:39:18,983 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.UserMapper matches criteria [is assignable to Object]
+</system-out>
+  </testcase>
+  <testcase classname="com.poi.OrderDaoTest" name="test22" time="0.236">
+    <error message="Could not initialize class org.mybatis.caches.ehcache.EhcacheCache" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class org.mybatis.caches.ehcache.EhcacheCache
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:186)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.cacheElement(XMLMapperBuilder.java:202)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:114)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:173)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:124)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.binding.MapperRegistry.addMappers(MapperRegistry.java:97)
+	at org.apache.ibatis.binding.MapperRegistry.addMappers(MapperRegistry.java:105)
+	at org.apache.ibatis.session.Configuration.addMappers(Configuration.java:724)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:360)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:98)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:78)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
+	at com.zl.utils.MyBatisUtils.getnewInstance(MyBatisUtils.java:28)
+	at com.poi.OrderDaoTest.before(OrderDaoTest.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>11:39:19,084 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo
+11:39:19,085 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo
+11:39:19,086 DEBUG DefaultVFS:102 - Reader entry: Items.class
+11:39:19,087 DEBUG DefaultVFS:102 - Reader entry: Orderdetail.class
+11:39:19,087 DEBUG DefaultVFS:102 - Reader entry: Orders.class
+11:39:19,088 DEBUG DefaultVFS:102 - Reader entry: OrdersCustom.class
+11:39:19,090 DEBUG DefaultVFS:102 - Reader entry: QueryVo.class
+11:39:19,102 DEBUG DefaultVFS:102 - Reader entry: User.class
+11:39:19,103 DEBUG DefaultVFS:102 - Reader entry: UserAnswerRecord.class
+11:39:19,104 DEBUG DefaultVFS:102 - Reader entry: UserCustom.class
+11:39:19,105 DEBUG DefaultVFS:113 - Listing file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo
+11:39:19,106 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Items.class
+11:39:19,107 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Items.class
+11:39:19,108 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;k&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#25;com/zl/mybatis/pojo/Items&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#7;&amp;#0;&amp;#6;&amp;#1;&amp;#0;&amp;#20;java/io/Serializable&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#19;Ljava/lang/Integer;&amp;#1;&amp;#0;&amp;#4;name&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;&amp;#5;price&amp;#1;&amp;#0;&amp;#17;Ljava/lang/Float;&amp;#1;&amp;#0;&amp;#3;pic&amp;#1;&amp;#0;
+11:39:19,110 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Orderdetail.class
+11:39:19,111 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Orderdetail.class
+11:39:19,113 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;K&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#31;com/zl/mybatis/pojo/Orderdetail&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#7;&amp;#0;&amp;#6;&amp;#1;&amp;#0;&amp;#20;java/io/Serializable&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#19;Ljava/lang/Integer;&amp;#1;&amp;#0;&amp;#8;ordersId&amp;#1;&amp;#0;&amp;#7;itemsId&amp;#1;&amp;#0;&amp;#8;itemsNum&amp;#1;&amp;#0;&amp;#5;items&amp;#1;&amp;#0;&amp;#27;Lcom/zl/mybatis/pojo/Items;&amp;#1;&amp;#0;&amp;#6;&lt;init&gt;&amp;#1;&amp;#0;&amp;#3;()V&amp;#1;&amp;#0;&amp;#4;Code
+11:39:19,115 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Orders.class
+11:39:19,116 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Orders.class
+11:39:19,117 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;m&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#26;com/zl/mybatis/pojo/Orders&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#7;&amp;#0;&amp;#6;&amp;#1;&amp;#0;&amp;#20;java/io/Serializable&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#19;Ljava/lang/Integer;&amp;#1;&amp;#0;&amp;#6;userId&amp;#1;&amp;#0;&amp;#6;number&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;
+11:39:19,119 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/OrdersCustom.class
+11:39:19,120 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/OrdersCustom.class
+11:39:19,121 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#29;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0; com/zl/mybatis/pojo/OrdersCustom&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#26;com/zl/mybatis/pojo/Orders&amp;#1;&amp;#0;&amp;#8;username&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;&amp;#7;address&amp;#1;&amp;#0;&amp;#6;&lt;init&gt;&amp;#1;&amp;#0;&amp;#3;()V&amp;#1;&amp;#0;&amp;#4;Code
+11:39:19,123 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/QueryVo.class
+11:39:19,124 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/QueryVo.class
+11:39:19,125 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0; &amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#27;com/zl/mybatis/pojo/QueryVo&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#4;user&amp;#1;&amp;#0;&amp;#26;Lcom/zl/mybatis/pojo/User;&amp;#1;&amp;#0;
+11:39:19,127 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/User.class
+11:39:19,128 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/User.class
+11:39:19,129 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;U&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#24;com/zl/mybatis/pojo/User&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#7;&amp;#0;&amp;#6;&amp;#1;&amp;#0;&amp;#20;java/io/Serializable&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#1;I&amp;#1;&amp;#0;&amp;#8;username&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;&amp;#3;sex&amp;#1;&amp;#0;&amp;#8;birthday&amp;#1;&amp;#0;&amp;#16;Ljava/util/Date;&amp;#1;&amp;#0;&amp;#7;address&amp;#1;&amp;#0;&amp;#6;orders&amp;#1;&amp;#0;&amp;#16;Ljava/util/List;&amp;#1;&amp;#0;	Signature&amp;#1;&amp;#0;.Ljava/util/List&lt;Lcom/zl/mybatis/pojo/Orders;&gt;;&amp;#1;&amp;#0;&amp;#6;&lt;init&gt;&amp;#1;&amp;#0;&amp;#3;()V&amp;#1;&amp;#0;&amp;#4;Code
+11:39:19,129 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/UserAnswerRecord.class
+11:39:19,129 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/UserAnswerRecord.class
+11:39:19,131 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;?&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;$com/zl/mybatis/pojo/UserAnswerRecord&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;&amp;#7;eventid&amp;#1;&amp;#0;
+11:39:19,133 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/UserCustom.class
+11:39:19,134 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/UserCustom.class
+11:39:19,135 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#19;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#30;com/zl/mybatis/pojo/UserCustom&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#24;com/zl/mybatis/pojo/User&amp;#1;&amp;#0;&amp;#14;birthday_start&amp;#1;&amp;#0;&amp;#16;Ljava/util/Date;&amp;#1;&amp;#0;&amp;#12;birthday_end&amp;#1;&amp;#0;&amp;#6;&lt;init&gt;&amp;#1;&amp;#0;&amp;#3;()V&amp;#1;&amp;#0;&amp;#4;Code
+11:39:19,137 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.Items matches criteria [is assignable to Object]
+11:39:19,138 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.Orderdetail matches criteria [is assignable to Object]
+11:39:19,139 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.Orders matches criteria [is assignable to Object]
+11:39:19,139 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.OrdersCustom matches criteria [is assignable to Object]
+11:39:19,140 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.QueryVo matches criteria [is assignable to Object]
+11:39:19,141 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.User matches criteria [is assignable to Object]
+11:39:19,142 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.UserAnswerRecord matches criteria [is assignable to Object]
+11:39:19,143 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.UserCustom matches criteria [is assignable to Object]
+11:39:19,158 DEBUG LogFactory:135 - Logging initialized using &apos;class org.apache.ibatis.logging.log4j.Log4jImpl&apos; adapter.
+11:39:19,167 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:19,168 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:19,168 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:19,168 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:19,176 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao
+11:39:19,177 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao
+11:39:19,178 DEBUG DefaultVFS:102 - Reader entry: OrderMapper.class
+11:39:19,180 DEBUG DefaultVFS:102 - Reader entry: OrderMapper.xml
+11:39:19,181 DEBUG DefaultVFS:102 - Reader entry: OrderResultTypeMapper.class
+11:39:19,182 DEBUG DefaultVFS:102 - Reader entry: OrderResultTypeMapper.xml
+11:39:19,183 DEBUG DefaultVFS:102 - Reader entry: PromotionMapper.class
+11:39:19,184 DEBUG DefaultVFS:102 - Reader entry: PromotionMapper.xml
+11:39:19,185 DEBUG DefaultVFS:102 - Reader entry: UserAnswerRecordMapper.class
+11:39:19,186 DEBUG DefaultVFS:102 - Reader entry: UserAnswerRecordMapper.xml
+11:39:19,187 DEBUG DefaultVFS:102 - Reader entry: UserMapper.class
+11:39:19,188 DEBUG DefaultVFS:102 - Reader entry: UserMapper.xml
+11:39:19,189 DEBUG DefaultVFS:113 - Listing file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao
+11:39:19,190 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderMapper.class
+11:39:19,191 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderMapper.class
+11:39:19,193 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#17;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#30;com/zl/mybatis/dao/OrderMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#22;findOrderListResultMap&amp;#1;&amp;#0;&amp;#18;()Ljava/util/List;&amp;#1;&amp;#0;
+11:39:19,193 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderMapper.xml
+11:39:19,193 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderMapper.xml
+11:39:19,194 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:19,194 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderResultTypeMapper.class
+11:39:19,194 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderResultTypeMapper.class
+11:39:19,195 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#14;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;(com/zl/mybatis/dao/OrderResultTypeMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#23;findOrderListResultType&amp;#1;&amp;#0;&amp;#18;()Ljava/util/List;&amp;#1;&amp;#0;
+11:39:19,195 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderResultTypeMapper.xml
+11:39:19,195 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderResultTypeMapper.xml
+11:39:19,196 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:19,196 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/PromotionMapper.class
+11:39:19,197 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/PromotionMapper.class
+11:39:19,197 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#19;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&quot;com/zl/mybatis/dao/PromotionMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;
+11:39:19,197 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/PromotionMapper.xml
+11:39:19,197 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/PromotionMapper.xml
+11:39:19,198 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:19,199 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserAnswerRecordMapper.class
+11:39:19,200 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserAnswerRecordMapper.class
+11:39:19,201 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#20;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;)com/zl/mybatis/dao/UserAnswerRecordMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#23;getUserAnswerRecordList&amp;#1;&amp;#0;;(Lcom/zl/mybatis/entity/UserAnswerQueryVo;)Ljava/util/List;&amp;#1;&amp;#0;	Signature&amp;#1;&amp;#0;c(Lcom/zl/mybatis/entity/UserAnswerQueryVo;)Ljava/util/List&lt;Lcom/zl/mybatis/pojo/UserAnswerRecord;&gt;;&amp;#1;&amp;#0;&amp;#22;delAnswerEvertRuleById&amp;#1;&amp;#0;&amp;#21;(Ljava/lang/String;)I&amp;#1;&amp;#0;&amp;#25;selectAnswerEvertRuleById&amp;#1;&amp;#0;$(Ljava/lang/String;)Ljava/util/List;&amp;#1;&amp;#0;9(Ljava/lang/String;)Ljava/util/List&lt;Ljava/lang/Integer;&gt;;&amp;#1;&amp;#0;&amp;#23;delAnswerEventConfnById&amp;#1;&amp;#0;&amp;#24;getUserAnswerRecordList1&amp;#1;&amp;#0;&amp;#15;insertRdoEnitiy&amp;#1;&amp;#0;&apos;(Lcom/zl/mybatis/entity/RdoOrderInfo;)V&amp;#1;&amp;#0;
+11:39:19,204 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserAnswerRecordMapper.xml
+11:39:19,205 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserAnswerRecordMapper.xml
+11:39:19,206 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:19,208 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserMapper.class
+11:39:19,209 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserMapper.class
+11:39:19,210 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0; &amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#29;com/zl/mybatis/dao/UserMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#11;getUserById&amp;#1;&amp;#0;&amp;#29;(I)Lcom/zl/mybatis/pojo/User;&amp;#1;&amp;#0;
+11:39:19,212 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserMapper.xml
+11:39:19,212 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserMapper.xml
+11:39:19,214 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:19,215 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.OrderMapper matches criteria [is assignable to Object]
+11:39:19,216 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.OrderResultTypeMapper matches criteria [is assignable to Object]
+11:39:19,216 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.PromotionMapper matches criteria [is assignable to Object]
+11:39:19,217 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.UserAnswerRecordMapper matches criteria [is assignable to Object]
+11:39:19,226 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.UserMapper matches criteria [is assignable to Object]
+11:39:19,275 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:19,275 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:19,275 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+</system-out>
+  </testcase>
+  <testcase classname="com.poi.OrderDaoTest" name="test33" time="0.088">
+    <error message="Could not initialize class org.mybatis.caches.ehcache.EhcacheCache" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class org.mybatis.caches.ehcache.EhcacheCache
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:186)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.cacheElement(XMLMapperBuilder.java:202)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:114)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:173)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:124)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.binding.MapperRegistry.addMappers(MapperRegistry.java:97)
+	at org.apache.ibatis.binding.MapperRegistry.addMappers(MapperRegistry.java:105)
+	at org.apache.ibatis.session.Configuration.addMappers(Configuration.java:724)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:360)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:98)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:78)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
+	at com.zl.utils.MyBatisUtils.getnewInstance(MyBatisUtils.java:28)
+	at com.poi.OrderDaoTest.before(OrderDaoTest.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>11:39:19,311 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo
+11:39:19,311 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo
+11:39:19,312 DEBUG DefaultVFS:102 - Reader entry: Items.class
+11:39:19,312 DEBUG DefaultVFS:102 - Reader entry: Orderdetail.class
+11:39:19,313 DEBUG DefaultVFS:102 - Reader entry: Orders.class
+11:39:19,313 DEBUG DefaultVFS:102 - Reader entry: OrdersCustom.class
+11:39:19,313 DEBUG DefaultVFS:102 - Reader entry: QueryVo.class
+11:39:19,314 DEBUG DefaultVFS:102 - Reader entry: User.class
+11:39:19,314 DEBUG DefaultVFS:102 - Reader entry: UserAnswerRecord.class
+11:39:19,315 DEBUG DefaultVFS:102 - Reader entry: UserCustom.class
+11:39:19,315 DEBUG DefaultVFS:113 - Listing file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo
+11:39:19,316 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Items.class
+11:39:19,316 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Items.class
+11:39:19,317 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;k&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#25;com/zl/mybatis/pojo/Items&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#7;&amp;#0;&amp;#6;&amp;#1;&amp;#0;&amp;#20;java/io/Serializable&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#19;Ljava/lang/Integer;&amp;#1;&amp;#0;&amp;#4;name&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;&amp;#5;price&amp;#1;&amp;#0;&amp;#17;Ljava/lang/Float;&amp;#1;&amp;#0;&amp;#3;pic&amp;#1;&amp;#0;
+11:39:19,318 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Orderdetail.class
+11:39:19,318 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Orderdetail.class
+11:39:19,319 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;K&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#31;com/zl/mybatis/pojo/Orderdetail&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#7;&amp;#0;&amp;#6;&amp;#1;&amp;#0;&amp;#20;java/io/Serializable&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#19;Ljava/lang/Integer;&amp;#1;&amp;#0;&amp;#8;ordersId&amp;#1;&amp;#0;&amp;#7;itemsId&amp;#1;&amp;#0;&amp;#8;itemsNum&amp;#1;&amp;#0;&amp;#5;items&amp;#1;&amp;#0;&amp;#27;Lcom/zl/mybatis/pojo/Items;&amp;#1;&amp;#0;&amp;#6;&lt;init&gt;&amp;#1;&amp;#0;&amp;#3;()V&amp;#1;&amp;#0;&amp;#4;Code
+11:39:19,319 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Orders.class
+11:39:19,319 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Orders.class
+11:39:19,320 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;m&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#26;com/zl/mybatis/pojo/Orders&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#7;&amp;#0;&amp;#6;&amp;#1;&amp;#0;&amp;#20;java/io/Serializable&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#19;Ljava/lang/Integer;&amp;#1;&amp;#0;&amp;#6;userId&amp;#1;&amp;#0;&amp;#6;number&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;
+11:39:19,321 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/OrdersCustom.class
+11:39:19,321 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/OrdersCustom.class
+11:39:19,322 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#29;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0; com/zl/mybatis/pojo/OrdersCustom&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#26;com/zl/mybatis/pojo/Orders&amp;#1;&amp;#0;&amp;#8;username&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;&amp;#7;address&amp;#1;&amp;#0;&amp;#6;&lt;init&gt;&amp;#1;&amp;#0;&amp;#3;()V&amp;#1;&amp;#0;&amp;#4;Code
+11:39:19,322 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/QueryVo.class
+11:39:19,323 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/QueryVo.class
+11:39:19,323 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0; &amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#27;com/zl/mybatis/pojo/QueryVo&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#4;user&amp;#1;&amp;#0;&amp;#26;Lcom/zl/mybatis/pojo/User;&amp;#1;&amp;#0;
+11:39:19,324 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/User.class
+11:39:19,324 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/User.class
+11:39:19,325 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;U&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#24;com/zl/mybatis/pojo/User&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#7;&amp;#0;&amp;#6;&amp;#1;&amp;#0;&amp;#20;java/io/Serializable&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#1;I&amp;#1;&amp;#0;&amp;#8;username&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;&amp;#3;sex&amp;#1;&amp;#0;&amp;#8;birthday&amp;#1;&amp;#0;&amp;#16;Ljava/util/Date;&amp;#1;&amp;#0;&amp;#7;address&amp;#1;&amp;#0;&amp;#6;orders&amp;#1;&amp;#0;&amp;#16;Ljava/util/List;&amp;#1;&amp;#0;	Signature&amp;#1;&amp;#0;.Ljava/util/List&lt;Lcom/zl/mybatis/pojo/Orders;&gt;;&amp;#1;&amp;#0;&amp;#6;&lt;init&gt;&amp;#1;&amp;#0;&amp;#3;()V&amp;#1;&amp;#0;&amp;#4;Code
+11:39:19,326 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/UserAnswerRecord.class
+11:39:19,326 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/UserAnswerRecord.class
+11:39:19,327 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;?&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;$com/zl/mybatis/pojo/UserAnswerRecord&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;&amp;#7;eventid&amp;#1;&amp;#0;
+11:39:19,328 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/UserCustom.class
+11:39:19,328 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/UserCustom.class
+11:39:19,329 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#19;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#30;com/zl/mybatis/pojo/UserCustom&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#24;com/zl/mybatis/pojo/User&amp;#1;&amp;#0;&amp;#14;birthday_start&amp;#1;&amp;#0;&amp;#16;Ljava/util/Date;&amp;#1;&amp;#0;&amp;#12;birthday_end&amp;#1;&amp;#0;&amp;#6;&lt;init&gt;&amp;#1;&amp;#0;&amp;#3;()V&amp;#1;&amp;#0;&amp;#4;Code
+11:39:19,329 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.Items matches criteria [is assignable to Object]
+11:39:19,329 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.Orderdetail matches criteria [is assignable to Object]
+11:39:19,330 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.Orders matches criteria [is assignable to Object]
+11:39:19,330 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.OrdersCustom matches criteria [is assignable to Object]
+11:39:19,330 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.QueryVo matches criteria [is assignable to Object]
+11:39:19,330 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.User matches criteria [is assignable to Object]
+11:39:19,330 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.UserAnswerRecord matches criteria [is assignable to Object]
+11:39:19,331 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.UserCustom matches criteria [is assignable to Object]
+11:39:19,333 DEBUG LogFactory:135 - Logging initialized using &apos;class org.apache.ibatis.logging.log4j.Log4jImpl&apos; adapter.
+11:39:19,335 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:19,336 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:19,336 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:19,336 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:19,338 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao
+11:39:19,338 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao
+11:39:19,339 DEBUG DefaultVFS:102 - Reader entry: OrderMapper.class
+11:39:19,340 DEBUG DefaultVFS:102 - Reader entry: OrderMapper.xml
+11:39:19,340 DEBUG DefaultVFS:102 - Reader entry: OrderResultTypeMapper.class
+11:39:19,341 DEBUG DefaultVFS:102 - Reader entry: OrderResultTypeMapper.xml
+11:39:19,341 DEBUG DefaultVFS:102 - Reader entry: PromotionMapper.class
+11:39:19,342 DEBUG DefaultVFS:102 - Reader entry: PromotionMapper.xml
+11:39:19,342 DEBUG DefaultVFS:102 - Reader entry: UserAnswerRecordMapper.class
+11:39:19,343 DEBUG DefaultVFS:102 - Reader entry: UserAnswerRecordMapper.xml
+11:39:19,343 DEBUG DefaultVFS:102 - Reader entry: UserMapper.class
+11:39:19,344 DEBUG DefaultVFS:102 - Reader entry: UserMapper.xml
+11:39:19,344 DEBUG DefaultVFS:113 - Listing file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao
+11:39:19,344 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderMapper.class
+11:39:19,345 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderMapper.class
+11:39:19,345 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#17;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#30;com/zl/mybatis/dao/OrderMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#22;findOrderListResultMap&amp;#1;&amp;#0;&amp;#18;()Ljava/util/List;&amp;#1;&amp;#0;
+11:39:19,346 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderMapper.xml
+11:39:19,346 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderMapper.xml
+11:39:19,347 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:19,347 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderResultTypeMapper.class
+11:39:19,347 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderResultTypeMapper.class
+11:39:19,347 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#14;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;(com/zl/mybatis/dao/OrderResultTypeMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#23;findOrderListResultType&amp;#1;&amp;#0;&amp;#18;()Ljava/util/List;&amp;#1;&amp;#0;
+11:39:19,348 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderResultTypeMapper.xml
+11:39:19,348 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderResultTypeMapper.xml
+11:39:19,349 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:19,349 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/PromotionMapper.class
+11:39:19,349 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/PromotionMapper.class
+11:39:19,350 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#19;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&quot;com/zl/mybatis/dao/PromotionMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;
+11:39:19,350 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/PromotionMapper.xml
+11:39:19,350 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/PromotionMapper.xml
+11:39:19,351 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:19,351 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserAnswerRecordMapper.class
+11:39:19,351 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserAnswerRecordMapper.class
+11:39:19,352 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#20;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;)com/zl/mybatis/dao/UserAnswerRecordMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#23;getUserAnswerRecordList&amp;#1;&amp;#0;;(Lcom/zl/mybatis/entity/UserAnswerQueryVo;)Ljava/util/List;&amp;#1;&amp;#0;	Signature&amp;#1;&amp;#0;c(Lcom/zl/mybatis/entity/UserAnswerQueryVo;)Ljava/util/List&lt;Lcom/zl/mybatis/pojo/UserAnswerRecord;&gt;;&amp;#1;&amp;#0;&amp;#22;delAnswerEvertRuleById&amp;#1;&amp;#0;&amp;#21;(Ljava/lang/String;)I&amp;#1;&amp;#0;&amp;#25;selectAnswerEvertRuleById&amp;#1;&amp;#0;$(Ljava/lang/String;)Ljava/util/List;&amp;#1;&amp;#0;9(Ljava/lang/String;)Ljava/util/List&lt;Ljava/lang/Integer;&gt;;&amp;#1;&amp;#0;&amp;#23;delAnswerEventConfnById&amp;#1;&amp;#0;&amp;#24;getUserAnswerRecordList1&amp;#1;&amp;#0;&amp;#15;insertRdoEnitiy&amp;#1;&amp;#0;&apos;(Lcom/zl/mybatis/entity/RdoOrderInfo;)V&amp;#1;&amp;#0;
+11:39:19,352 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserAnswerRecordMapper.xml
+11:39:19,353 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserAnswerRecordMapper.xml
+11:39:19,353 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:19,353 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserMapper.class
+11:39:19,354 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserMapper.class
+11:39:19,354 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0; &amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#29;com/zl/mybatis/dao/UserMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#11;getUserById&amp;#1;&amp;#0;&amp;#29;(I)Lcom/zl/mybatis/pojo/User;&amp;#1;&amp;#0;
+11:39:19,354 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserMapper.xml
+11:39:19,355 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserMapper.xml
+11:39:19,355 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:19,356 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.OrderMapper matches criteria [is assignable to Object]
+11:39:19,356 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.OrderResultTypeMapper matches criteria [is assignable to Object]
+11:39:19,356 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.PromotionMapper matches criteria [is assignable to Object]
+11:39:19,356 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.UserAnswerRecordMapper matches criteria [is assignable to Object]
+11:39:19,356 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.UserMapper matches criteria [is assignable to Object]
+</system-out>
+  </testcase>
+  <testcase classname="com.poi.OrderDaoTest" name="test3333" time="0.086">
+    <error message="Could not initialize class org.mybatis.caches.ehcache.EhcacheCache" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class org.mybatis.caches.ehcache.EhcacheCache
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:186)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.cacheElement(XMLMapperBuilder.java:202)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:114)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:173)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:124)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.binding.MapperRegistry.addMappers(MapperRegistry.java:97)
+	at org.apache.ibatis.binding.MapperRegistry.addMappers(MapperRegistry.java:105)
+	at org.apache.ibatis.session.Configuration.addMappers(Configuration.java:724)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:360)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:98)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:78)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
+	at com.zl.utils.MyBatisUtils.getnewInstance(MyBatisUtils.java:28)
+	at com.poi.OrderDaoTest.before(OrderDaoTest.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>11:39:19,400 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo
+11:39:19,400 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo
+11:39:19,401 DEBUG DefaultVFS:102 - Reader entry: Items.class
+11:39:19,401 DEBUG DefaultVFS:102 - Reader entry: Orderdetail.class
+11:39:19,402 DEBUG DefaultVFS:102 - Reader entry: Orders.class
+11:39:19,402 DEBUG DefaultVFS:102 - Reader entry: OrdersCustom.class
+11:39:19,402 DEBUG DefaultVFS:102 - Reader entry: QueryVo.class
+11:39:19,403 DEBUG DefaultVFS:102 - Reader entry: User.class
+11:39:19,403 DEBUG DefaultVFS:102 - Reader entry: UserAnswerRecord.class
+11:39:19,403 DEBUG DefaultVFS:102 - Reader entry: UserCustom.class
+11:39:19,404 DEBUG DefaultVFS:113 - Listing file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo
+11:39:19,404 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Items.class
+11:39:19,404 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Items.class
+11:39:19,405 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;k&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#25;com/zl/mybatis/pojo/Items&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#7;&amp;#0;&amp;#6;&amp;#1;&amp;#0;&amp;#20;java/io/Serializable&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#19;Ljava/lang/Integer;&amp;#1;&amp;#0;&amp;#4;name&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;&amp;#5;price&amp;#1;&amp;#0;&amp;#17;Ljava/lang/Float;&amp;#1;&amp;#0;&amp;#3;pic&amp;#1;&amp;#0;
+11:39:19,405 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Orderdetail.class
+11:39:19,405 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Orderdetail.class
+11:39:19,406 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;K&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#31;com/zl/mybatis/pojo/Orderdetail&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#7;&amp;#0;&amp;#6;&amp;#1;&amp;#0;&amp;#20;java/io/Serializable&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#19;Ljava/lang/Integer;&amp;#1;&amp;#0;&amp;#8;ordersId&amp;#1;&amp;#0;&amp;#7;itemsId&amp;#1;&amp;#0;&amp;#8;itemsNum&amp;#1;&amp;#0;&amp;#5;items&amp;#1;&amp;#0;&amp;#27;Lcom/zl/mybatis/pojo/Items;&amp;#1;&amp;#0;&amp;#6;&lt;init&gt;&amp;#1;&amp;#0;&amp;#3;()V&amp;#1;&amp;#0;&amp;#4;Code
+11:39:19,406 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Orders.class
+11:39:19,406 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Orders.class
+11:39:19,407 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;m&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#26;com/zl/mybatis/pojo/Orders&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#7;&amp;#0;&amp;#6;&amp;#1;&amp;#0;&amp;#20;java/io/Serializable&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#19;Ljava/lang/Integer;&amp;#1;&amp;#0;&amp;#6;userId&amp;#1;&amp;#0;&amp;#6;number&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;
+11:39:19,407 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/OrdersCustom.class
+11:39:19,407 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/OrdersCustom.class
+11:39:19,408 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#29;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0; com/zl/mybatis/pojo/OrdersCustom&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#26;com/zl/mybatis/pojo/Orders&amp;#1;&amp;#0;&amp;#8;username&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;&amp;#7;address&amp;#1;&amp;#0;&amp;#6;&lt;init&gt;&amp;#1;&amp;#0;&amp;#3;()V&amp;#1;&amp;#0;&amp;#4;Code
+11:39:19,408 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/QueryVo.class
+11:39:19,409 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/QueryVo.class
+11:39:19,409 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0; &amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#27;com/zl/mybatis/pojo/QueryVo&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#4;user&amp;#1;&amp;#0;&amp;#26;Lcom/zl/mybatis/pojo/User;&amp;#1;&amp;#0;
+11:39:19,410 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/User.class
+11:39:19,410 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/User.class
+11:39:19,411 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;U&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#24;com/zl/mybatis/pojo/User&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#7;&amp;#0;&amp;#6;&amp;#1;&amp;#0;&amp;#20;java/io/Serializable&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#1;I&amp;#1;&amp;#0;&amp;#8;username&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;&amp;#3;sex&amp;#1;&amp;#0;&amp;#8;birthday&amp;#1;&amp;#0;&amp;#16;Ljava/util/Date;&amp;#1;&amp;#0;&amp;#7;address&amp;#1;&amp;#0;&amp;#6;orders&amp;#1;&amp;#0;&amp;#16;Ljava/util/List;&amp;#1;&amp;#0;	Signature&amp;#1;&amp;#0;.Ljava/util/List&lt;Lcom/zl/mybatis/pojo/Orders;&gt;;&amp;#1;&amp;#0;&amp;#6;&lt;init&gt;&amp;#1;&amp;#0;&amp;#3;()V&amp;#1;&amp;#0;&amp;#4;Code
+11:39:19,411 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/UserAnswerRecord.class
+11:39:19,412 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/UserAnswerRecord.class
+11:39:19,412 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;?&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;$com/zl/mybatis/pojo/UserAnswerRecord&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;&amp;#7;eventid&amp;#1;&amp;#0;
+11:39:19,413 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/UserCustom.class
+11:39:19,413 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/UserCustom.class
+11:39:19,413 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#19;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#30;com/zl/mybatis/pojo/UserCustom&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#24;com/zl/mybatis/pojo/User&amp;#1;&amp;#0;&amp;#14;birthday_start&amp;#1;&amp;#0;&amp;#16;Ljava/util/Date;&amp;#1;&amp;#0;&amp;#12;birthday_end&amp;#1;&amp;#0;&amp;#6;&lt;init&gt;&amp;#1;&amp;#0;&amp;#3;()V&amp;#1;&amp;#0;&amp;#4;Code
+11:39:19,414 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.Items matches criteria [is assignable to Object]
+11:39:19,414 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.Orderdetail matches criteria [is assignable to Object]
+11:39:19,414 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.Orders matches criteria [is assignable to Object]
+11:39:19,414 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.OrdersCustom matches criteria [is assignable to Object]
+11:39:19,414 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.QueryVo matches criteria [is assignable to Object]
+11:39:19,415 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.User matches criteria [is assignable to Object]
+11:39:19,415 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.UserAnswerRecord matches criteria [is assignable to Object]
+11:39:19,415 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.UserCustom matches criteria [is assignable to Object]
+11:39:19,417 DEBUG LogFactory:135 - Logging initialized using &apos;class org.apache.ibatis.logging.log4j.Log4jImpl&apos; adapter.
+11:39:19,420 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:19,420 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:19,420 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:19,420 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:19,422 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao
+11:39:19,422 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao
+11:39:19,423 DEBUG DefaultVFS:102 - Reader entry: OrderMapper.class
+11:39:19,424 DEBUG DefaultVFS:102 - Reader entry: OrderMapper.xml
+11:39:19,425 DEBUG DefaultVFS:102 - Reader entry: OrderResultTypeMapper.class
+11:39:19,425 DEBUG DefaultVFS:102 - Reader entry: OrderResultTypeMapper.xml
+11:39:19,425 DEBUG DefaultVFS:102 - Reader entry: PromotionMapper.class
+11:39:19,426 DEBUG DefaultVFS:102 - Reader entry: PromotionMapper.xml
+11:39:19,426 DEBUG DefaultVFS:102 - Reader entry: UserAnswerRecordMapper.class
+11:39:19,426 DEBUG DefaultVFS:102 - Reader entry: UserAnswerRecordMapper.xml
+11:39:19,427 DEBUG DefaultVFS:102 - Reader entry: UserMapper.class
+11:39:19,427 DEBUG DefaultVFS:102 - Reader entry: UserMapper.xml
+11:39:19,427 DEBUG DefaultVFS:113 - Listing file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao
+11:39:19,428 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderMapper.class
+11:39:19,428 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderMapper.class
+11:39:19,428 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#17;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#30;com/zl/mybatis/dao/OrderMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#22;findOrderListResultMap&amp;#1;&amp;#0;&amp;#18;()Ljava/util/List;&amp;#1;&amp;#0;
+11:39:19,429 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderMapper.xml
+11:39:19,429 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderMapper.xml
+11:39:19,429 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:19,430 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderResultTypeMapper.class
+11:39:19,430 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderResultTypeMapper.class
+11:39:19,430 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#14;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;(com/zl/mybatis/dao/OrderResultTypeMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#23;findOrderListResultType&amp;#1;&amp;#0;&amp;#18;()Ljava/util/List;&amp;#1;&amp;#0;
+11:39:19,431 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderResultTypeMapper.xml
+11:39:19,431 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderResultTypeMapper.xml
+11:39:19,431 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:19,432 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/PromotionMapper.class
+11:39:19,432 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/PromotionMapper.class
+11:39:19,433 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#19;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&quot;com/zl/mybatis/dao/PromotionMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;
+11:39:19,433 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/PromotionMapper.xml
+11:39:19,434 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/PromotionMapper.xml
+11:39:19,434 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:19,435 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserAnswerRecordMapper.class
+11:39:19,435 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserAnswerRecordMapper.class
+11:39:19,435 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#20;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;)com/zl/mybatis/dao/UserAnswerRecordMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#23;getUserAnswerRecordList&amp;#1;&amp;#0;;(Lcom/zl/mybatis/entity/UserAnswerQueryVo;)Ljava/util/List;&amp;#1;&amp;#0;	Signature&amp;#1;&amp;#0;c(Lcom/zl/mybatis/entity/UserAnswerQueryVo;)Ljava/util/List&lt;Lcom/zl/mybatis/pojo/UserAnswerRecord;&gt;;&amp;#1;&amp;#0;&amp;#22;delAnswerEvertRuleById&amp;#1;&amp;#0;&amp;#21;(Ljava/lang/String;)I&amp;#1;&amp;#0;&amp;#25;selectAnswerEvertRuleById&amp;#1;&amp;#0;$(Ljava/lang/String;)Ljava/util/List;&amp;#1;&amp;#0;9(Ljava/lang/String;)Ljava/util/List&lt;Ljava/lang/Integer;&gt;;&amp;#1;&amp;#0;&amp;#23;delAnswerEventConfnById&amp;#1;&amp;#0;&amp;#24;getUserAnswerRecordList1&amp;#1;&amp;#0;&amp;#15;insertRdoEnitiy&amp;#1;&amp;#0;&apos;(Lcom/zl/mybatis/entity/RdoOrderInfo;)V&amp;#1;&amp;#0;
+11:39:19,436 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserAnswerRecordMapper.xml
+11:39:19,436 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserAnswerRecordMapper.xml
+11:39:19,437 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:19,437 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserMapper.class
+11:39:19,437 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserMapper.class
+11:39:19,438 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0; &amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#29;com/zl/mybatis/dao/UserMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#11;getUserById&amp;#1;&amp;#0;&amp;#29;(I)Lcom/zl/mybatis/pojo/User;&amp;#1;&amp;#0;
+11:39:19,438 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserMapper.xml
+11:39:19,438 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserMapper.xml
+11:39:19,439 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:19,439 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.OrderMapper matches criteria [is assignable to Object]
+11:39:19,439 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.OrderResultTypeMapper matches criteria [is assignable to Object]
+11:39:19,440 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.PromotionMapper matches criteria [is assignable to Object]
+11:39:19,440 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.UserAnswerRecordMapper matches criteria [is assignable to Object]
+11:39:19,440 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.UserMapper matches criteria [is assignable to Object]
+</system-out>
+  </testcase>
+  <testcase classname="com.poi.OrderDaoTest" name="test23" time="0.13">
+    <error message="Could not initialize class org.mybatis.caches.ehcache.EhcacheCache" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class org.mybatis.caches.ehcache.EhcacheCache
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:186)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.cacheElement(XMLMapperBuilder.java:202)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:114)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:173)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:124)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.binding.MapperRegistry.addMappers(MapperRegistry.java:97)
+	at org.apache.ibatis.binding.MapperRegistry.addMappers(MapperRegistry.java:105)
+	at org.apache.ibatis.session.Configuration.addMappers(Configuration.java:724)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:360)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:98)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:78)
+	at org.apache.ibatis.session.SqlSessionFactoryBuilder.build(SqlSessionFactoryBuilder.java:64)
+	at com.zl.utils.MyBatisUtils.getnewInstance(MyBatisUtils.java:28)
+	at com.poi.OrderDaoTest.before(OrderDaoTest.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>11:39:19,483 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo
+11:39:19,484 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo
+11:39:19,484 DEBUG DefaultVFS:102 - Reader entry: Items.class
+11:39:19,485 DEBUG DefaultVFS:102 - Reader entry: Orderdetail.class
+11:39:19,485 DEBUG DefaultVFS:102 - Reader entry: Orders.class
+11:39:19,486 DEBUG DefaultVFS:102 - Reader entry: OrdersCustom.class
+11:39:19,486 DEBUG DefaultVFS:102 - Reader entry: QueryVo.class
+11:39:19,487 DEBUG DefaultVFS:102 - Reader entry: User.class
+11:39:19,487 DEBUG DefaultVFS:102 - Reader entry: UserAnswerRecord.class
+11:39:19,487 DEBUG DefaultVFS:102 - Reader entry: UserCustom.class
+11:39:19,488 DEBUG DefaultVFS:113 - Listing file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo
+11:39:19,488 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Items.class
+11:39:19,488 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Items.class
+11:39:19,489 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;k&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#25;com/zl/mybatis/pojo/Items&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#7;&amp;#0;&amp;#6;&amp;#1;&amp;#0;&amp;#20;java/io/Serializable&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#19;Ljava/lang/Integer;&amp;#1;&amp;#0;&amp;#4;name&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;&amp;#5;price&amp;#1;&amp;#0;&amp;#17;Ljava/lang/Float;&amp;#1;&amp;#0;&amp;#3;pic&amp;#1;&amp;#0;
+11:39:19,490 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Orderdetail.class
+11:39:19,490 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Orderdetail.class
+11:39:19,490 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;K&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#31;com/zl/mybatis/pojo/Orderdetail&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#7;&amp;#0;&amp;#6;&amp;#1;&amp;#0;&amp;#20;java/io/Serializable&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#19;Ljava/lang/Integer;&amp;#1;&amp;#0;&amp;#8;ordersId&amp;#1;&amp;#0;&amp;#7;itemsId&amp;#1;&amp;#0;&amp;#8;itemsNum&amp;#1;&amp;#0;&amp;#5;items&amp;#1;&amp;#0;&amp;#27;Lcom/zl/mybatis/pojo/Items;&amp;#1;&amp;#0;&amp;#6;&lt;init&gt;&amp;#1;&amp;#0;&amp;#3;()V&amp;#1;&amp;#0;&amp;#4;Code
+11:39:19,491 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Orders.class
+11:39:19,491 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/Orders.class
+11:39:19,492 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;m&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#26;com/zl/mybatis/pojo/Orders&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#7;&amp;#0;&amp;#6;&amp;#1;&amp;#0;&amp;#20;java/io/Serializable&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#19;Ljava/lang/Integer;&amp;#1;&amp;#0;&amp;#6;userId&amp;#1;&amp;#0;&amp;#6;number&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;
+11:39:19,492 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/OrdersCustom.class
+11:39:19,493 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/OrdersCustom.class
+11:39:19,493 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#29;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0; com/zl/mybatis/pojo/OrdersCustom&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#26;com/zl/mybatis/pojo/Orders&amp;#1;&amp;#0;&amp;#8;username&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;&amp;#7;address&amp;#1;&amp;#0;&amp;#6;&lt;init&gt;&amp;#1;&amp;#0;&amp;#3;()V&amp;#1;&amp;#0;&amp;#4;Code
+11:39:19,493 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/QueryVo.class
+11:39:19,494 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/QueryVo.class
+11:39:19,494 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0; &amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#27;com/zl/mybatis/pojo/QueryVo&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#4;user&amp;#1;&amp;#0;&amp;#26;Lcom/zl/mybatis/pojo/User;&amp;#1;&amp;#0;
+11:39:19,495 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/User.class
+11:39:19,495 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/User.class
+11:39:19,496 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;U&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#24;com/zl/mybatis/pojo/User&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#7;&amp;#0;&amp;#6;&amp;#1;&amp;#0;&amp;#20;java/io/Serializable&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#1;I&amp;#1;&amp;#0;&amp;#8;username&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;&amp;#3;sex&amp;#1;&amp;#0;&amp;#8;birthday&amp;#1;&amp;#0;&amp;#16;Ljava/util/Date;&amp;#1;&amp;#0;&amp;#7;address&amp;#1;&amp;#0;&amp;#6;orders&amp;#1;&amp;#0;&amp;#16;Ljava/util/List;&amp;#1;&amp;#0;	Signature&amp;#1;&amp;#0;.Ljava/util/List&lt;Lcom/zl/mybatis/pojo/Orders;&gt;;&amp;#1;&amp;#0;&amp;#6;&lt;init&gt;&amp;#1;&amp;#0;&amp;#3;()V&amp;#1;&amp;#0;&amp;#4;Code
+11:39:19,496 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/UserAnswerRecord.class
+11:39:19,496 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/UserAnswerRecord.class
+11:39:19,497 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;?&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;$com/zl/mybatis/pojo/UserAnswerRecord&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#2;id&amp;#1;&amp;#0;&amp;#18;Ljava/lang/String;&amp;#1;&amp;#0;&amp;#7;eventid&amp;#1;&amp;#0;
+11:39:19,497 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/UserCustom.class
+11:39:19,498 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/pojo/UserCustom.class
+11:39:19,498 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#19;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#30;com/zl/mybatis/pojo/UserCustom&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#24;com/zl/mybatis/pojo/User&amp;#1;&amp;#0;&amp;#14;birthday_start&amp;#1;&amp;#0;&amp;#16;Ljava/util/Date;&amp;#1;&amp;#0;&amp;#12;birthday_end&amp;#1;&amp;#0;&amp;#6;&lt;init&gt;&amp;#1;&amp;#0;&amp;#3;()V&amp;#1;&amp;#0;&amp;#4;Code
+11:39:19,499 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.Items matches criteria [is assignable to Object]
+11:39:19,499 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.Orderdetail matches criteria [is assignable to Object]
+11:39:19,499 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.Orders matches criteria [is assignable to Object]
+11:39:19,500 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.OrdersCustom matches criteria [is assignable to Object]
+11:39:19,500 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.QueryVo matches criteria [is assignable to Object]
+11:39:19,500 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.User matches criteria [is assignable to Object]
+11:39:19,500 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.UserAnswerRecord matches criteria [is assignable to Object]
+11:39:19,501 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.pojo.UserCustom matches criteria [is assignable to Object]
+11:39:19,502 DEBUG LogFactory:135 - Logging initialized using &apos;class org.apache.ibatis.logging.log4j.Log4jImpl&apos; adapter.
+11:39:19,504 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:19,505 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:19,505 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:19,505 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:19,507 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao
+11:39:19,507 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao
+11:39:19,508 DEBUG DefaultVFS:102 - Reader entry: OrderMapper.class
+11:39:19,509 DEBUG DefaultVFS:102 - Reader entry: OrderMapper.xml
+11:39:19,509 DEBUG DefaultVFS:102 - Reader entry: OrderResultTypeMapper.class
+11:39:19,510 DEBUG DefaultVFS:102 - Reader entry: OrderResultTypeMapper.xml
+11:39:19,510 DEBUG DefaultVFS:102 - Reader entry: PromotionMapper.class
+11:39:19,511 DEBUG DefaultVFS:102 - Reader entry: PromotionMapper.xml
+11:39:19,511 DEBUG DefaultVFS:102 - Reader entry: UserAnswerRecordMapper.class
+11:39:19,512 DEBUG DefaultVFS:102 - Reader entry: UserAnswerRecordMapper.xml
+11:39:19,512 DEBUG DefaultVFS:102 - Reader entry: UserMapper.class
+11:39:19,512 DEBUG DefaultVFS:102 - Reader entry: UserMapper.xml
+11:39:19,513 DEBUG DefaultVFS:113 - Listing file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao
+11:39:19,513 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderMapper.class
+11:39:19,513 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderMapper.class
+11:39:19,514 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#17;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#30;com/zl/mybatis/dao/OrderMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#22;findOrderListResultMap&amp;#1;&amp;#0;&amp;#18;()Ljava/util/List;&amp;#1;&amp;#0;
+11:39:19,514 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderMapper.xml
+11:39:19,515 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderMapper.xml
+11:39:19,515 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:19,516 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderResultTypeMapper.class
+11:39:19,516 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderResultTypeMapper.class
+11:39:19,517 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#14;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;(com/zl/mybatis/dao/OrderResultTypeMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#23;findOrderListResultType&amp;#1;&amp;#0;&amp;#18;()Ljava/util/List;&amp;#1;&amp;#0;
+11:39:19,518 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderResultTypeMapper.xml
+11:39:19,518 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/OrderResultTypeMapper.xml
+11:39:19,519 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:19,519 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/PromotionMapper.class
+11:39:19,519 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/PromotionMapper.class
+11:39:19,520 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#19;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&quot;com/zl/mybatis/dao/PromotionMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;
+11:39:19,521 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/PromotionMapper.xml
+11:39:19,521 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/PromotionMapper.xml
+11:39:19,522 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:19,523 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserAnswerRecordMapper.class
+11:39:19,523 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserAnswerRecordMapper.class
+11:39:19,523 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0;&amp;#20;&amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;)com/zl/mybatis/dao/UserAnswerRecordMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#23;getUserAnswerRecordList&amp;#1;&amp;#0;;(Lcom/zl/mybatis/entity/UserAnswerQueryVo;)Ljava/util/List;&amp;#1;&amp;#0;	Signature&amp;#1;&amp;#0;c(Lcom/zl/mybatis/entity/UserAnswerQueryVo;)Ljava/util/List&lt;Lcom/zl/mybatis/pojo/UserAnswerRecord;&gt;;&amp;#1;&amp;#0;&amp;#22;delAnswerEvertRuleById&amp;#1;&amp;#0;&amp;#21;(Ljava/lang/String;)I&amp;#1;&amp;#0;&amp;#25;selectAnswerEvertRuleById&amp;#1;&amp;#0;$(Ljava/lang/String;)Ljava/util/List;&amp;#1;&amp;#0;9(Ljava/lang/String;)Ljava/util/List&lt;Ljava/lang/Integer;&gt;;&amp;#1;&amp;#0;&amp;#23;delAnswerEventConfnById&amp;#1;&amp;#0;&amp;#24;getUserAnswerRecordList1&amp;#1;&amp;#0;&amp;#15;insertRdoEnitiy&amp;#1;&amp;#0;&apos;(Lcom/zl/mybatis/entity/RdoOrderInfo;)V&amp;#1;&amp;#0;
+11:39:19,524 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserAnswerRecordMapper.xml
+11:39:19,525 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserAnswerRecordMapper.xml
+11:39:19,525 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:19,526 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserMapper.class
+11:39:19,526 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserMapper.class
+11:39:19,527 DEBUG DefaultVFS:102 - Reader entry: 漱壕&amp;#0;&amp;#0;&amp;#0;4&amp;#0; &amp;#7;&amp;#0;&amp;#2;&amp;#1;&amp;#0;&amp;#29;com/zl/mybatis/dao/UserMapper&amp;#7;&amp;#0;&amp;#4;&amp;#1;&amp;#0;&amp;#16;java/lang/Object&amp;#1;&amp;#0;&amp;#11;getUserById&amp;#1;&amp;#0;&amp;#29;(I)Lcom/zl/mybatis/pojo/User;&amp;#1;&amp;#0;
+11:39:19,527 DEBUG DefaultVFS:222 - Find JAR URL: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserMapper.xml
+11:39:19,527 DEBUG DefaultVFS:248 - Not a JAR: file:/E:/develop/workSpaceSelf/exercise/target/classes/com/zl/mybatis/dao/UserMapper.xml
+11:39:19,528 DEBUG DefaultVFS:102 - Reader entry: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+11:39:19,529 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.OrderMapper matches criteria [is assignable to Object]
+11:39:19,529 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.OrderResultTypeMapper matches criteria [is assignable to Object]
+11:39:19,529 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.PromotionMapper matches criteria [is assignable to Object]
+11:39:19,529 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.UserAnswerRecordMapper matches criteria [is assignable to Object]
+11:39:19,530 DEBUG ResolverUtil:256 - Checking to see if class com.zl.mybatis.dao.UserMapper matches criteria [is assignable to Object]
+11:39:19,578 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:19,578 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+11:39:19,578 DEBUG PooledDataSource:316 - PooledDataSource forcefully closed/removed all connections.
+</system-out>
+  </testcase>
+</testsuite>
